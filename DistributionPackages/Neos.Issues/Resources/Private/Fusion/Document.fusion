@@ -1,0 +1,20 @@
+prototype(Neos.Issues:Document) < prototype(Neos.Issues:Document.Mixin) {
+    content = afx`
+        <Neos.Neos:ContentCollection nodePath='main' tagName='main' />
+    `
+}
+
+
+prototype(Neos.Issues:Document.Mixin) < prototype(Neos.Fusion:Component) {
+
+    content = null
+
+    renderer = Neos.Neos:Page {
+        body = afx`
+            <div style='margin:50px auto;max-width:1400px;'>
+                <Neos.Neos:Menu />
+                {props.content}
+            </div>
+        `
+    }
+}

@@ -1,0 +1,27 @@
+# https://github.com/neos/neos-ui/issues/2365
+
+'Neos.Issues:NeosUI.2365.Document':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    label: 'Neos UI Issue 2365'
+    icon: 'fas fa-bug'
+  childNodes:
+    tbody:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Neos.Issues:NeosUI.2365.Content': true
+
+'Neos.Issues:NeosUI.2365.Content':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Neos UI Issue 2365'
+    icon: 'fas fa-bug'
+
+'Neos.Neos:ContentCollection':
+  constraints:
+    nodeTypes:
+      'Neos.Issues:NeosUI.2365.Content': false

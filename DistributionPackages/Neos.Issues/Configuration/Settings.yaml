@@ -1,0 +1,11 @@
+Neos:
+  Flow:
+    mvc:
+      routes:
+        'Neos.Neos':
+          variables:
+            defaultUriSuffix: ''
+  Neos:
+    fusion:
+      autoInclude:
+        'Neos.Issues': true

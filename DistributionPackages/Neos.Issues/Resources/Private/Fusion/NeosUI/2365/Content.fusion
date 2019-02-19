@@ -1,0 +1,8 @@
+prototype(Neos.Issues:NeosUI.2365.Content) < prototype(Neos.Neos:ContentComponent) {
+    renderer = afx`
+        <tr>
+            <td>Text 1</td>
+            <td>Text 2</td>
+        </tr>
+    `
+}

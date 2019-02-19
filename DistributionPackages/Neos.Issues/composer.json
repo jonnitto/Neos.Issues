@@ -1,0 +1,27 @@
+{
+    "name": "neos/issues",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/fusion-afx": "*",
+        "neos/neos-ui": "*"
+    },
+    "authors": [
+        {
+            "name": "Jon Uhlmann",
+            "email": "me@jonnitto.ch",
+            "homepage": "https://www.jonnitto.ch",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Neos\\Issues\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Neos.Issues"
+        }
+    }
+}

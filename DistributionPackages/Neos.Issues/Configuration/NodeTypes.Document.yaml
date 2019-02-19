@@ -1,0 +1,10 @@
+'Neos.Issues:Document':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    label: Document
+    icon: icon-file
+    position: 100
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
