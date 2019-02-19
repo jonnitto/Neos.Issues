@@ -1,10 +1,9 @@
-'Neos.Issues:Document':
+'Neos.Issues:Mixin.Document':
   superTypes:
     'Neos.Neos:Document': true
   ui:
-    label: Document
-    icon: icon-globe
+    icon: 'fas fa-bug'
   constraints:
     nodeTypes:
       'Neos.Neos:Document': false
-      'Neos.Issues:Mixin.Document': true
+      'Neos.Issues:Mixin.Document': false
