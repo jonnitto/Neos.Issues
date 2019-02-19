@@ -61,15 +61,15 @@
      </node>
     </node>
     <node identifier="cbccdf2f-4b36-4571-bf5c-7a5553eb175e" nodeName="node-rget7d0zjdvzz">
-     <variant sortingIndex="200" workspace="live" nodeType="Neos.Issues:NeosUI.2365.Document" version="4" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.Issues:NeosUI.2365.Document" version="5" removed="" hidden="" hiddenInIndex="">
       <dimensions/>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2019-02-19T08:48:29+01:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2019-02-19T10:58:02+01:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2019-02-19T10:58:01+01:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-02-19T11:44:30+01:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2019-02-19T11:44:30+01:00</lastPublicationDateTime>
       <properties>
        <uriPathSegment __type="string">ui-2365</uriPathSegment>
-       <title __type="string">UI 236</title>
+       <title __type="string">UI 2365</title>
       </properties>
      </variant>
      <node identifier="1041af68-aa24-8ec8-f32f-142522ce7e2d" nodeName="tbody">
