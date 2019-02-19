@@ -1,9 +1,10 @@
 prototype(Neos.Issues:NeosUI.2365.Document) < prototype(Neos.Issues:Document.Mixin) {
+    headline = 'ContentCollection fails if it is tbody'
+    lead = 'If a <code>Neos.Neos:ContentCollection</code> has a special <code>tagName</code> like <code>tbody</code> it is only possible to create one content element. After the first one is created, it is only possible to add a new after a reload or via the structure tree'
+    link = 'https://github.com/neos/neos-ui/issues/2365'
+
     content = afx`
-        <h1>ContentCollection fails if it is tbody</h1>
-        <a href='https://github.com/neos/neos-ui/issues/2365' target='_blank'>Link to the Issue ob github</a>
-        <p>If a <code>Neos.Neos:ContentCollection</code> has a special <code>tagName</code> like <code>tbody</code> it is only possible to create one content element. After the first one is created, it is only possible to add a new after a reload or via the structure tree</p>
-        <table style='width:100%'>
+        <table class='table'>
             <thead>
                 <tr>
                     <th>Head 1</th>

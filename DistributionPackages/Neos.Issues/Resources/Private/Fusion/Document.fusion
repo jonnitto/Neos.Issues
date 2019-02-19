@@ -1,20 +1,62 @@
-prototype(Neos.Issues:Document) < prototype(Neos.Issues:Document.Mixin) {
-    content = afx`
-        <Neos.Neos:ContentCollection nodePath='main' tagName='main' />
-    `
-}
+prototype(Neos.Issues:Document) < prototype(Neos.Issues:Document.Mixin)
 
 
 prototype(Neos.Issues:Document.Mixin) < prototype(Neos.Fusion:Component) {
-
     content = null
+    headline = null
+    lead = null
+    description = null
+    link = null
+    linkText = 'Link to the issue on github.com'
+
+    prototype(Neos.Neos:Menu) {
+//attributes
+    }
 
     renderer = Neos.Neos:Page {
-        body = afx`
-            <div style='margin:50px auto;max-width:1400px;'>
-                <Neos.Neos:Menu />
-                {props.content}
-            </div>
+        head.stylesheets.bootstrap = afx`
+            <link
+                href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+                rel='stylesheet'
+                integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T'
+                crossorigin='anonymous' />
         `
+        bodyTag.attributes {
+            class = 'container'
+            style = 'margin-top:50px;margin-bottom:50px;'
+        }
+        body = Neos.Fusion:Component {
+            @apply.props = ${props}
+            renderer = afx`
+                <nav class='navbar navbar-expand navbar-light bg-light my-5'>
+                    <span class='navbar-brand'>Neos Issues</span>
+                    <Neos.Neos:Menu
+                        attributes.class='navbar-nav'
+                        normal.attributes.class='nav-item'
+                        active.attributes.class='nav-item active'
+                        current.attributes.class='nav-item active'
+                        @process.addClassToLink={String.replace(value, '<a ', '<a class="nav-link" ')}
+                         />
+                </nav>
+                
+                <div class='jumbotron' @if.render={props.headline}>
+                    <h1>{props.headline}</h1>
+                    <p class='lead' @if.render={props.lead}>{props.lead}</p>
+                    <hr class='my-4' @if.render={props.link} />
+                    <a
+                        @if.render={props.link && props.linkText}
+                        href={props.link}
+                        class='btn btn-primary btn-lg'
+                        target='_blank'>
+                            {props.linkText}
+                    </a>
+                    <p class='mt-4 mb-0' @if.render={props.description}><small>{props.description}</small></p>
+                </div>
+                {props.content}
+            `
+        }
     }
 }
+
+
+
