@@ -19,6 +19,7 @@
   ui:
     label: 'Neos UI Issue 2365'
     icon: 'fas fa-bug'
+    inlineEditable: true
 
 'Neos.Neos:ContentCollection':
   constraints:
