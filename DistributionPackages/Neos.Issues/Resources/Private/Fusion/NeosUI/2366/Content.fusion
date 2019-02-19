@@ -1,0 +1,38 @@
+prototype(Neos.Issues:NeosUI.2366.Content.CreationDialogProperties) < prototype(Neos.Neos:ContentComponent) {
+    checkbox = ${q(node).property('checkbox')}
+
+    renderer = afx`
+        <h2 class='mt-5'>Content Element with <code>CreationDialogProperties</code></h2>
+        <a
+            href='https://github.com/bwaidelich/Wwwision.Neos.CreationDialogProperties'
+            target='_blank'
+            >
+            Link to <code>wwwision/neos-creationdialogproperties</code>
+        </a>
+        <hr />
+        <div class='custom-control custom-switch'>
+            <input type='checkbox' class='custom-control-input' id='checkbox' checked={props.checkbox} disabled />
+            <label class='custom-control-label' for='checkbox'>Checkbox state</label>
+        </div>
+    `
+}
+
+
+prototype(Neos.Issues:NeosUI.2366.Content.NodeTemplate) < prototype(Neos.Neos:ContentComponent) {
+    checkbox = ${q(node).property('checkbox')}
+
+    renderer = afx`
+        <h2 class='mt-5'>Content Element with <code>Flowpack.NodeTemplates</code></h2>
+        <a
+            href='https://github.com/Flowpack/Flowpack.NodeTemplates'
+            target='_blank'
+            >
+            Link to <code>flowpack/nodetemplates</code>
+        </a>
+        <hr />
+        <div class='custom-control custom-switch'>
+            <input type='checkbox' class='custom-control-input' id='checkbox' checked={props.checkbox} disabled />
+            <label class='custom-control-label' for='checkbox'>Checkbox state</label>
+        </div>
+    `
+}

@@ -1,0 +1,10 @@
+prototype(Neos.Issues:NeosUI.2366.Document) < prototype(Neos.Issues:Document.Mixin) {
+    headline = 'Boolean editor closes creation dialog'
+    lead = 'If I have a <code>BooleanEditor</code> in a <code>creationDialog</code> and a user click on it, the creation dialog gets closed immediately.'
+    description = 'To reproduce it, try to create an content element and click on the checkbox in the creation dialog.'
+    link = 'https://github.com/neos/neos-ui/issues/2366'
+
+    content = afx`
+        <Neos.Neos:ContentCollection tagName='main' nodePath='main' />
+    `
+}
