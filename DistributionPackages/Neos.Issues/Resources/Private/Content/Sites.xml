@@ -60,6 +60,97 @@
       </node>
      </node>
     </node>
+    <node identifier="694505af-5b57-488d-8af8-f1fa2e77b2f1" nodeName="node-rfgkk4tp5fxsd">
+     <variant sortingIndex="350" workspace="live" nodeType="Neos.Issues:NeosDevelopmentCollection.2392.Document" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-03-08T08:40:35+01:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T08:46:51+01:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2019-03-08T08:46:51+01:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">neos-dev-collection-issue-2392</uriPathSegment>
+       <title __type="string">Neos Dev Collection Issue 2392</title>
+      </properties>
+     </variant>
+     <node identifier="aa543f0c-930b-4d4e-8d3c-06b63f0a1295" nodeName="node-2i043l0kqjg1y">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Issues:NeosDevelopmentCollection.2392.Parent" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-08T08:45:14+01:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T08:46:51+01:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-03-08T08:46:51+01:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">parent-visible</uriPathSegment>
+        <title __type="string">Parent visible</title>
+       </properties>
+      </variant>
+      <node identifier="f1bb61c2-f523-426c-8bf4-393c4f020718" nodeName="node-7uk79y623i5x9">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Issues:NeosDevelopmentCollection.2392.Children" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-03-08T08:45:49+01:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:58:39+01:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-03-08T09:58:39+01:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">children-visible</uriPathSegment>
+         <title __type="string">Parent visible - Children visible</title>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="8a626332-dbff-442b-ae35-b023043d6703" nodeName="node-9kxbzbxasi0wl">
+       <variant sortingIndex="150" workspace="live" nodeType="Neos.Issues:NeosDevelopmentCollection.2392.Children" version="5" removed="" hidden="1" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-03-08T08:46:11+01:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:58:38+01:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-03-08T09:58:38+01:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">children-hidden</uriPathSegment>
+         <title __type="string">Parent visible - Children hidden</title>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="4dc98006-09aa-45c4-9e0a-2cc6b41e8ec6" nodeName="node-ktjz101d3649j">
+      <variant sortingIndex="150" workspace="live" nodeType="Neos.Issues:NeosDevelopmentCollection.2392.Parent" version="4" removed="" hidden="1" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-08T08:45:21+01:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T08:46:51+01:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-03-08T08:46:51+01:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">parent-hidden</uriPathSegment>
+        <title __type="string">Parent hidden</title>
+       </properties>
+      </variant>
+      <node identifier="fbbae2ad-666d-431f-bfd1-fa1ecdf7dee8" nodeName="node-11xu29eyoe6kv">
+       <variant sortingIndex="150" workspace="live" nodeType="Neos.Issues:NeosDevelopmentCollection.2392.Children" version="6" removed="" hidden="1" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-03-08T08:45:36+01:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:58:39+01:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-03-08T09:58:39+01:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">children-hidden</uriPathSegment>
+         <title __type="string">Parent hidden - Children hidden</title>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="b3092f4a-77f6-4ad1-9c5b-aa2a0b949d99" nodeName="node-aw7zem1x0tvc4">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Issues:NeosDevelopmentCollection.2392.Children" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-03-08T08:45:30+01:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:58:39+01:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-03-08T09:58:39+01:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">children-visible</uriPathSegment>
+         <title __type="string">Parent hidden - Children visible</title>
+        </properties>
+       </variant>
+      </node>
+     </node>
+    </node>
     <node identifier="cbccdf2f-4b36-4571-bf5c-7a5553eb175e" nodeName="node-rget7d0zjdvzz">
      <variant sortingIndex="200" workspace="live" nodeType="Neos.Issues:NeosUI.2365.Document" version="5" removed="" hidden="" hiddenInIndex="">
       <dimensions/>

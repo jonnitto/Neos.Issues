@@ -1,0 +1,34 @@
+# https://github.com/neos/neos-development-collection/issues/2392
+
+'Neos.Issues:NeosDevelopmentCollection.2392.Document':
+  superTypes:
+    'Neos.Issues:Mixin.Document': true
+  ui:
+    label: 'Issue 2392'
+    group: neosDevCollection
+  constraints:
+    nodeTypes:
+      'Neos.Issues:NeosDevelopmentCollection.2392.Parent': true
+
+'Neos.Issues:NeosDevelopmentCollection.2392.Parent':
+  superTypes:
+    'Neos.Issues:Mixin.Document': true
+  ui:
+    label: 'Parent'
+    group: neosDevCollection
+  constraints:
+    nodeTypes:
+      'Neos.Issues:NeosDevelopmentCollection.2392.Children': true
+
+'Neos.Issues:NeosDevelopmentCollection.2392.Children':
+  superTypes:
+    'Neos.Issues:Mixin.Document': true
+  ui:
+    label: 'Children'
+    group: neosDevCollection
+
+'Neos.Issues:Document':
+  constraints:
+    nodeTypes:
+      'Neos.Issues:NeosDevelopmentCollection.2392.Parent': false
+      'Neos.Issues:NeosDevelopmentCollection.2392.Children': false

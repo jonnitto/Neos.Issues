@@ -1,0 +1,32 @@
+prototype(Neos.Issues:NeosDevelopmentCollection.2392.Document) < prototype(Neos.Issues:Document.Mixin) {
+    headline = "FlowQuery doesn't respect hidden parents"
+    lead = 'If a FlowQuey is written with <code>find()</code> hidden parents will not be respected. This can lead to links to not available pages.'
+    link = 'https://github.com/neos/neos-development-collection/issues/2392'
+
+    content = Neos.Fusion:Component {
+        children = ${q(node).find('[instanceof Neos.Issues:NeosDevelopmentCollection.2392.Children]').get()}
+
+        renderer = afx`
+            <p>There are <strong>{Array.length(props.children)} items</strong> with the FlowQuery <code>{"q(node).find('[instanceof Neos.Issues:NeosDevelopmentCollection.2392.Children]').get()"}</code></p>
+
+            <div class='list-group'>
+                <Neos.Fusion:Loop items={props.children} @children='itemRenderer'>
+                    <a class={['list-group-item list-group-item-action', q(item).parent().is() ? false : 'list-group-item-danger']}>
+                        <Neos.Neos:NodeUri @path='attributes.href' node={item} />
+                        {item.label}
+                    </a>
+                </Neos.Fusion:Loop>
+            </div>
+        `
+    }
+}
+
+prototype(Neos.Issues:NeosDevelopmentCollection.2392.Children) < prototype(Neos.Issues:Document.Mixin) {
+    headline = ${node.label}
+    link = Neos.Neos:NodeUri {
+        node = ${q(node).parents('[instanceof Neos.Issues:NeosDevelopmentCollection.2392.Document]').get(0)}
+    }
+    linkText = 'Go to issue page'
+}
+
+prototype(Neos.Issues:NeosDevelopmentCollection.2392.Parent) < prototype(Neos.Issues:NeosDevelopmentCollection.2392.Children)
