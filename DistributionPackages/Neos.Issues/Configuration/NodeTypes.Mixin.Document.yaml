@@ -1,4 +1,5 @@
 'Neos.Issues:Mixin.Document':
+  abstract: true
   superTypes:
     'Neos.Neos:Document': true
   ui:

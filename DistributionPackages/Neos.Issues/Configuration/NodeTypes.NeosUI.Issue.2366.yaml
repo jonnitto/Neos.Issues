@@ -4,7 +4,8 @@
   superTypes:
     'Neos.Issues:Mixin.Document': true
   ui:
-    label: 'Neos UI Issue 2366'
+    label: 'Issue 2366'
+    group: neosUI
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
@@ -20,6 +21,7 @@
   ui:
     label: 'CreationDialogProperties'
     icon: 'fas fa-bug'
+    group: neosUI
     inspector:
       groups:
         settings:
@@ -42,6 +44,7 @@
   ui:
     label: 'NodeTemplate'
     icon: 'fas fa-bug'
+    group: neosUI
     inspector:
       groups:
         settings:

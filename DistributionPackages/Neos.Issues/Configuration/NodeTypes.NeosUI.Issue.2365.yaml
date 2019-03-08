@@ -4,7 +4,8 @@
   superTypes:
     'Neos.Issues:Mixin.Document': true
   ui:
-    label: 'Neos UI Issue 2365'
+    label: 'Issue 2365'
+    group: neosUI
   childNodes:
     tbody:
       type: 'Neos.Neos:ContentCollection'
@@ -17,8 +18,9 @@
   superTypes:
     'Neos.Neos:Content': true
   ui:
-    label: 'Neos UI Issue 2365'
+    label: 'Issue 2365 Content'
     icon: 'fas fa-bug'
+    group: neosUI
     inlineEditable: true
 
 'Neos.Neos:ContentCollection':

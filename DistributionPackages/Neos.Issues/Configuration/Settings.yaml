@@ -9,3 +9,14 @@ Neos:
     fusion:
       autoInclude:
         'Neos.Issues': true
+    nodeTypes:
+      groups:
+        neosDevCollection:
+          position: 1
+          label: 'Neos Development Collection'
+        flowDevCollection:
+          position: 2
+          label: 'Flow Development Collection'
+        neosUI:
+          position: 3
+          label: 'Neos UI'
