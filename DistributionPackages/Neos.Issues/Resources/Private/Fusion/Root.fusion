@@ -1,1 +1,8 @@
+// Needed if you test it Neos 3.3
+
+root.default {
+    renderPath >
+    type = ${q(documentNode).property('_nodeType.name')}
+}
+
 include: **/*.fusion

@@ -24,10 +24,11 @@ prototype(Neos.Issues:Document.Mixin) < prototype(Neos.Fusion:Component) {
             style = 'margin-top:50px;margin-bottom:50px;'
         }
         body = Neos.Fusion:Component {
-            @apply.props = ${props}
+            nested = ${props}
+
             renderer = afx`
                 <nav class='navbar navbar-expand navbar-light bg-light my-5'>
-                    <span class='navbar-brand'>{props.siteName}</span>
+                    <span class='navbar-brand'>{props.nested.siteName}</span>
                     <Neos.Neos:Menu
                         maximumLevels={1}
                         attributes.class='navbar-nav'
@@ -38,20 +39,20 @@ prototype(Neos.Issues:Document.Mixin) < prototype(Neos.Fusion:Component) {
                          />
                 </nav>
                 
-                <div class='jumbotron' @if.render={props.headline}>
-                    <h1>{props.headline}</h1>
-                    <p class='lead' @if.render={props.lead}>{props.lead}</p>
-                    <hr class='my-4' @if.render={props.link} />
+                <div class='jumbotron' @if.render={props.nested.headline}>
+                    <h1>{props.nested.headline}</h1>
+                    <p class='lead' @if.render={props.nested.lead}>{props.nested.lead}</p>
+                    <hr class='my-4' @if.render={props.nested.link} />
                     <a
-                        @if.render={props.link && props.linkText}
-                        href={props.link}
+                        @if.render={props.nested.link && props.nested.linkText}
+                        href={props.nested.link}
                         class='btn btn-primary btn-lg'
-                        target={props.linkTarget}>
-                            {props.linkText}
+                        target={props.nested.linkTarget}>
+                            {props.nested.linkText}
                     </a>
-                    <p class='mt-4 mb-0' @if.render={props.description}><small>{props.description}</small></p>
+                    <p class='mt-4 mb-0' @if.render={props.nested.description}><small>{props.nested.description}</small></p>
                 </div>
-                {props.content}
+                {props.nested.content}
             `
         }
     }
