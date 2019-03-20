@@ -11,17 +11,11 @@ node_modules
 /*.rst
 /flow
 /flow.bat
-/composer.lock
-/gulp_local.yaml
 
 /bin
 /Build
 /Configuration
 /Data
 /Packages
-/_Resources
 
-/Web/_Resources
-/Web/index.php
-/Web/robots.txt
-/Web/.user.ini
+/Web
