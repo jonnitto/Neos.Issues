@@ -13,53 +13,6 @@
       <title __type="string">Neos Issues</title>
      </properties>
     </variant>
-    <node identifier="067c0b88-74ff-44df-b79f-51624bbc8079" nodeName="node-5m50fh0nrjhd0">
-     <variant sortingIndex="250" workspace="live" nodeType="Neos.Issues:NeosUI.2366.Document" version="4" removed="" hidden="" hiddenInIndex="">
-      <dimensions/>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2019-02-19T10:25:53+01:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2019-02-19T10:57:53+01:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2019-02-19T10:57:53+01:00</lastPublicationDateTime>
-      <properties>
-       <uriPathSegment __type="string">ui-2366</uriPathSegment>
-       <title __type="string">UI 2366</title>
-      </properties>
-     </variant>
-     <node identifier="cef53ad6-0593-7fd0-6141-1a3f6e7b72a0" nodeName="main">
-      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
-       <dimensions/>
-       <accessRoles __type="array"/>
-       <creationDateTime __type="object" __classname="DateTime">2019-02-19T10:25:53+01:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-02-19T10:28:59+01:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2019-02-19T10:28:59+01:00</lastPublicationDateTime>
-       <properties/>
-      </variant>
-      <node identifier="50793b9f-5adb-48af-bbbd-0960b7e6e041" nodeName="node-cnjn3w2qfrm6c">
-       <variant sortingIndex="150" workspace="live" nodeType="Neos.Issues:NeosUI.2366.Content.CreationDialogProperties" version="4" removed="" hidden="" hiddenInIndex="">
-        <dimensions/>
-        <accessRoles __type="array"/>
-        <creationDateTime __type="object" __classname="DateTime">2019-02-19T10:33:52+01:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2019-02-19T10:36:49+01:00</lastModificationDateTime>
-        <lastPublicationDateTime __type="object" __classname="DateTime">2019-02-19T10:36:49+01:00</lastPublicationDateTime>
-        <properties>
-         <checkbox __type="boolean">1</checkbox>
-        </properties>
-       </variant>
-      </node>
-      <node identifier="b22127c9-8b5f-48d6-b7e4-e7ec5124d3ab" nodeName="node-lyapr5yto4g3d">
-       <variant sortingIndex="200" workspace="live" nodeType="Neos.Issues:NeosUI.2366.Content.NodeTemplate" version="5" removed="" hidden="" hiddenInIndex="">
-        <dimensions/>
-        <accessRoles __type="array"/>
-        <creationDateTime __type="object" __classname="DateTime">2019-02-19T10:40:09+01:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2019-02-19T10:41:38+01:00</lastModificationDateTime>
-        <lastPublicationDateTime __type="object" __classname="DateTime">2019-02-19T10:41:38+01:00</lastPublicationDateTime>
-        <properties>
-         <checkbox __type="boolean"></checkbox>
-        </properties>
-       </variant>
-      </node>
-     </node>
-    </node>
     <node identifier="694505af-5b57-488d-8af8-f1fa2e77b2f1" nodeName="node-rfgkk4tp5fxsd">
      <variant sortingIndex="350" workspace="live" nodeType="Neos.Issues:NeosDevelopmentCollection.2392.Document" version="2" removed="" hidden="" hiddenInIndex="">
       <dimensions/>
