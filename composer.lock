@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98247173bf7ba4ee98fd9498a334a218",
+    "content-hash": "ab0cc7d0dbf84f6a932bc30fc100ecde",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -52,16 +52,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5"
+                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
-                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/53120e0eb10355388d6ccbe462f1fea34ddadb24",
+                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24",
                 "shasum": ""
             },
             "require": {
@@ -116,7 +116,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2017-12-06T07:11:42+00:00"
+            "time": "2019-03-25T19:12:02+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -195,34 +195,36 @@
         },
         {
             "name": "doctrine/collections",
-            "version": "v1.5.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "a01ee38fcd999f34d9bfbcee59dbda5105449cbf"
+                "reference": "d2ae4ef05e25197343b6a39bae1d3c427a2f6956"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/a01ee38fcd999f34d9bfbcee59dbda5105449cbf",
-                "reference": "a01ee38fcd999f34d9bfbcee59dbda5105449cbf",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/d2ae4ef05e25197343b6a39bae1d3c427a2f6956",
+                "reference": "d2ae4ef05e25197343b6a39bae1d3c427a2f6956",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": "^7.1.3"
             },
             "require-dev": {
-                "doctrine/coding-standard": "~0.1@dev",
-                "phpunit/phpunit": "^5.7"
+                "doctrine/coding-standard": "^6.0",
+                "phpstan/phpstan-shim": "^0.9.2",
+                "phpunit/phpunit": "^7.0",
+                "vimeo/psalm": "^3.2.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3.x-dev"
+                    "dev-master": "1.6.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Collections\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Collections\\": "lib/Doctrine/Common/Collections"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -251,14 +253,15 @@
                     "email": "schmittjoh@gmail.com"
                 }
             ],
-            "description": "Collections Abstraction library",
-            "homepage": "http://www.doctrine-project.org",
+            "description": "PHP Doctrine Collections library that adds additional functionality on top of PHP arrays.",
+            "homepage": "https://www.doctrine-project.org/projects/collections.html",
             "keywords": [
                 "array",
                 "collections",
-                "iterator"
+                "iterators",
+                "php"
             ],
-            "time": "2017-07-22T10:37:32+00:00"
+            "time": "2019-03-25T19:03:48+00:00"
         },
         {
             "name": "doctrine/common",
@@ -335,29 +338,25 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.7.2",
+            "version": "v2.5.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "c0e5736016a51b427a8cba8bc470fbea78165819"
+                "reference": "729340d8d1eec8f01bff708e12e449a3415af873"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/c0e5736016a51b427a8cba8bc470fbea78165819",
-                "reference": "c0e5736016a51b427a8cba8bc470fbea78165819",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/729340d8d1eec8f01bff708e12e449a3415af873",
+                "reference": "729340d8d1eec8f01bff708e12e449a3415af873",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": "^2.7.1",
-                "ext-pdo": "*",
-                "php": "^7.1"
+                "doctrine/common": ">=2.4,<2.8-dev",
+                "php": ">=5.3.2"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^4.0",
-                "phpunit/phpunit": "^7.0",
-                "phpunit/phpunit-mock-objects": "!=3.2.4,!=3.2.5",
-                "symfony/console": "^2.0.5||^3.0",
-                "symfony/phpunit-bridge": "^3.4.5|^4.0.5"
+                "phpunit/phpunit": "4.*",
+                "symfony/console": "2.*||^3.0"
             },
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
@@ -368,7 +367,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7.x-dev"
+                    "dev-master": "2.5.x-dev"
                 }
             },
             "autoload": {
@@ -406,7 +405,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2018-07-13T04:49:01+00:00"
+            "time": "2017-07-22T20:44:48+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -477,27 +476,29 @@
         },
         {
             "name": "doctrine/instantiator",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda"
+                "reference": "a2c590166b2133a4633738648b6b064edae0814a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/a2c590166b2133a4633738648b6b064edae0814a",
+                "reference": "a2c590166b2133a4633738648b6b064edae0814a",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
             },
             "require-dev": {
-                "athletic/athletic": "~0.1.8",
+                "doctrine/coding-standard": "^6.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpunit/phpunit": "^6.2.3",
-                "squizlabs/php_codesniffer": "^3.0.2"
+                "phpbench/phpbench": "^0.13",
+                "phpstan/phpstan-phpunit": "^0.11",
+                "phpstan/phpstan-shim": "^0.11",
+                "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "extra": {
@@ -522,12 +523,12 @@
                 }
             ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
-            "homepage": "https://github.com/doctrine/instantiator",
+            "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
             "keywords": [
                 "constructor",
                 "instantiate"
             ],
-            "time": "2017-07-22T11:58:36+00:00"
+            "time": "2019-03-17T17:37:11+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -585,36 +586,32 @@
         },
         {
             "name": "doctrine/migrations",
-            "version": "v1.8.1",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations.git",
-                "reference": "215438c0eef3e5f9b7da7d09c6b90756071b43e6"
+                "reference": "fda27fc96d20a1abd46d4526387c7d6d416da263"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/migrations/zipball/215438c0eef3e5f9b7da7d09c6b90756071b43e6",
-                "reference": "215438c0eef3e5f9b7da7d09c6b90756071b43e6",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/fda27fc96d20a1abd46d4526387c7d6d416da263",
+                "reference": "fda27fc96d20a1abd46d4526387c7d6d416da263",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "~2.6",
+                "doctrine/dbal": "~2.2",
                 "ocramius/proxy-manager": "^1.0|^2.0",
-                "php": "^7.1",
-                "symfony/console": "~3.3|^4.0"
+                "php": "^5.5|^7.0",
+                "symfony/console": "~2.3|~3.0",
+                "symfony/yaml": "~2.3|~3.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^1.0",
-                "doctrine/orm": "~2.5",
-                "jdorn/sql-formatter": "~1.1",
-                "mikey179/vfsstream": "^1.6",
-                "phpunit/phpunit": "~7.0",
-                "squizlabs/php_codesniffer": "^3.0",
-                "symfony/yaml": "~3.3|^4.0"
-            },
-            "suggest": {
-                "jdorn/sql-formatter": "Allows to generate formatted SQL with the diff command.",
-                "symfony/yaml": "Allows the use of yaml for migration configuration files."
+                "doctrine/coding-standard": "dev-master",
+                "doctrine/orm": "2.*",
+                "johnkary/phpunit-speedtrap": "~1.0@dev",
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "~4.7",
+                "satooshi/php-coveralls": "0.6.*"
             },
             "bin": [
                 "bin/doctrine-migrations"
@@ -622,18 +619,17 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "v1.8.x-dev"
+                    "dev-master": "v1.4.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Doctrine\\DBAL\\Migrations\\": "lib/Doctrine/DBAL/Migrations",
-                    "Doctrine\\Migrations\\": "lib/Doctrine/Migrations"
+                    "Doctrine\\DBAL\\Migrations\\": "lib/Doctrine/DBAL/Migrations"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "LGPL-2.1"
             ],
             "authors": [
                 {
@@ -650,49 +646,47 @@
                 }
             ],
             "description": "Database Schema migrations using Doctrine DBAL",
-            "homepage": "https://www.doctrine-project.org/projects/migrations.html",
+            "homepage": "http://www.doctrine-project.org",
             "keywords": [
                 "database",
                 "migrations"
             ],
-            "time": "2018-06-06T21:00:30+00:00"
+            "time": "2016-02-23T15:27:16+00:00"
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.6.3",
+            "version": "v2.5.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "434820973cadf2da2d66e7184be370084cc32ca8"
+                "reference": "810a7baf81462a5ddf10e8baa8cb94b6eec02754"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/434820973cadf2da2d66e7184be370084cc32ca8",
-                "reference": "434820973cadf2da2d66e7184be370084cc32ca8",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/810a7baf81462a5ddf10e8baa8cb94b6eec02754",
+                "reference": "810a7baf81462a5ddf10e8baa8cb94b6eec02754",
                 "shasum": ""
             },
             "require": {
-                "doctrine/annotations": "~1.5",
-                "doctrine/cache": "~1.6",
-                "doctrine/collections": "^1.4",
-                "doctrine/common": "^2.7.1",
-                "doctrine/dbal": "^2.6",
-                "doctrine/instantiator": "~1.1",
+                "doctrine/cache": "~1.4",
+                "doctrine/collections": "~1.2",
+                "doctrine/common": ">=2.5-dev,<2.9-dev",
+                "doctrine/dbal": ">=2.5-dev,<2.7-dev",
+                "doctrine/instantiator": "^1.0.1",
                 "ext-pdo": "*",
-                "php": "^7.1",
-                "symfony/console": "~3.0|~4.0"
+                "php": ">=5.4",
+                "symfony/console": "~2.5|~3.0|~4.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^1.0",
-                "phpunit/phpunit": "^6.5",
-                "squizlabs/php_codesniffer": "^3.2",
-                "symfony/yaml": "~3.4|~4.0"
+                "phpunit/phpunit": "~4.0",
+                "symfony/yaml": "~2.3|~3.0|~4.0"
             },
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
             },
             "bin": [
-                "bin/doctrine"
+                "bin/doctrine",
+                "bin/doctrine.php"
             ],
             "type": "library",
             "extra": {
@@ -701,8 +695,8 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Doctrine\\ORM\\": "lib/Doctrine/ORM"
+                "psr-0": {
+                    "Doctrine\\ORM\\": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -725,10 +719,6 @@
                 {
                     "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com"
                 }
             ],
             "description": "Object-Relational-Mapper for PHP",
@@ -737,7 +727,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2018-11-20T23:46:46+00:00"
+            "time": "2017-12-17T02:57:51+00:00"
         },
         {
             "name": "flowpack/nodetemplates",
@@ -771,32 +761,29 @@
         },
         {
             "name": "gedmo/doctrine-extensions",
-            "version": "v2.4.36",
+            "version": "v2.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Atlantic18/DoctrineExtensions.git",
-                "reference": "87c78ff9fd4b90460386f753d95622f6fbbfcb27"
+                "reference": "c3ff3c73c95b01e107af33d4fe3abf80794e2df9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/87c78ff9fd4b90460386f753d95622f6fbbfcb27",
-                "reference": "87c78ff9fd4b90460386f753d95622f6fbbfcb27",
+                "url": "https://api.github.com/repos/Atlantic18/DoctrineExtensions/zipball/c3ff3c73c95b01e107af33d4fe3abf80794e2df9",
+                "reference": "c3ff3c73c95b01e107af33d4fe3abf80794e2df9",
                 "shasum": ""
             },
             "require": {
-                "behat/transliterator": "~1.2",
+                "behat/transliterator": "~1.0",
                 "doctrine/common": "~2.4",
                 "php": ">=5.3.2"
             },
-            "conflict": {
-                "doctrine/annotations": "<1.2"
-            },
             "require-dev": {
-                "doctrine/common": ">=2.5.0",
-                "doctrine/mongodb-odm": ">=1.0.2",
-                "doctrine/orm": ">=2.5.0",
-                "phpunit/phpunit": "^4.8.35|^5.7|^6.5",
-                "symfony/yaml": "~2.6|~3.0|~4.0"
+                "doctrine/mongodb-odm": ">=1.0.0-BETA11",
+                "doctrine/orm": "~2.4",
+                "phpunit/phpunit": "~4.4",
+                "phpunit/phpunit-mock-objects": "~2.3",
+                "symfony/yaml": "~2.3"
             },
             "suggest": {
                 "doctrine/mongodb-odm": "to use the extensions with the MongoDB ODM",
@@ -805,12 +792,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4.x-dev"
+                    "dev-master": "2.3.x-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Gedmo\\": "lib/Gedmo"
+                "psr-0": {
+                    "Gedmo\\": "lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -848,7 +835,7 @@
                 "tree",
                 "uploadable"
             ],
-            "time": "2018-07-26T12:16:35+00:00"
+            "time": "2015-02-24T21:41:37+00:00"
         },
         {
             "name": "imagine/imagine",
@@ -910,33 +897,27 @@
         },
         {
             "name": "neos/cache",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/cache.git",
-                "reference": "4b04449c6861d31516e89e1178558deafbeee1f0"
+                "reference": "468f35debcaa458e8aeef637de7f3772e2e6b5ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/cache/zipball/4b04449c6861d31516e89e1178558deafbeee1f0",
-                "reference": "4b04449c6861d31516e89e1178558deafbeee1f0",
+                "url": "https://api.github.com/repos/neos/cache/zipball/468f35debcaa458e8aeef637de7f3772e2e6b5ab",
+                "reference": "468f35debcaa458e8aeef637de7f3772e2e6b5ab",
                 "shasum": ""
             },
             "require": {
                 "neos/utility-files": "*",
                 "neos/utility-opcodecache": "*",
                 "neos/utility-pdo": "*",
-                "php": "~7.1",
-                "psr/cache": "~1.0",
-                "psr/simple-cache": "^1.0"
-            },
-            "provide": {
-                "psr/cache-implementation": "1.0",
-                "psr/simple-cache-implementation": "1.0"
+                "php": "~7.0"
             },
             "require-dev": {
                 "mikey179/vfsstream": "~1.6",
-                "phpunit/phpunit": "~7.1"
+                "phpunit/phpunit": "~6.0"
             },
             "suggest": {
                 "ext-memcache": "If you have a memcache server and want to use it for caching.",
@@ -960,7 +941,7 @@
             ],
             "description": "Neos Cache Framework",
             "homepage": "http://flow.neos.io",
-            "time": "2019-01-29T15:17:11+00:00"
+            "time": "2018-08-24T08:00:01+00:00"
         },
         {
             "name": "neos/composer-plugin",
@@ -997,22 +978,22 @@
         },
         {
             "name": "neos/content-repository",
-            "version": "4.2.9",
+            "version": "3.3.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/typo3cr.git",
-                "reference": "a5555aa48f8693c3dd7debbb2fed61084ab7cf1e"
+                "reference": "76fcae34f66c481d9aa274ed9a64b6173ff0039c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/typo3cr/zipball/a5555aa48f8693c3dd7debbb2fed61084ab7cf1e",
-                "reference": "a5555aa48f8693c3dd7debbb2fed61084ab7cf1e",
+                "url": "https://api.github.com/repos/neos/typo3cr/zipball/76fcae34f66c481d9aa274ed9a64b6173ff0039c",
+                "reference": "76fcae34f66c481d9aa274ed9a64b6173ff0039c",
                 "shasum": ""
             },
             "require": {
                 "behat/transliterator": "~1.0",
-                "doctrine/orm": "~2.6.0",
-                "gedmo/doctrine-extensions": "~2.4.0",
+                "doctrine/orm": "~2.5.0",
+                "gedmo/doctrine-extensions": "~2.3.0",
                 "neos/cache": "*",
                 "neos/eel": "*",
                 "neos/flow": "*",
@@ -1094,20 +1075,7 @@
                     "Neos.Neos-20161201222211",
                     "Neos.Fusion-20161202215034",
                     "Neos.ContentRepository-20161219093512",
-                    "Neos.Fusion-20170120013047",
-                    "Neos.Flow-20180415105700",
-                    "Neos.Fusion-20161219092345",
-                    "Neos.Media-20161219094126",
-                    "Neos.Neos-20161219094403",
-                    "Neos.Neos-20161219122512",
-                    "Neos.Fusion-20161219130100",
-                    "Neos.Neos-20161220163741",
-                    "Neos.Neos-20170115114620",
-                    "Neos.Flow-20170125103800",
-                    "Neos.Seo-20170127154600",
-                    "Neos.Flow-20170127183102",
-                    "Neos.Fusion-20180211175500",
-                    "Neos.Fusion-20180211184832"
+                    "Neos.Fusion-20170120013047"
                 ]
             },
             "autoload": {
@@ -1120,20 +1088,20 @@
                 "GPL-3.0-or-later"
             ],
             "description": "Content repository based on Flow, specifically made for Neos.",
-            "time": "2019-01-29T17:18:37+00:00"
+            "time": "2019-01-23T20:30:29+00:00"
         },
         {
             "name": "neos/diff",
-            "version": "4.2.9",
+            "version": "3.3.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/diff.git",
-                "reference": "a506b834a218a3ceb4a8cfa2c3b2672797b4aed3"
+                "reference": "375302baf7a27f4bb0379997330b4860fb3f9c13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/diff/zipball/a506b834a218a3ceb4a8cfa2c3b2672797b4aed3",
-                "reference": "a506b834a218a3ceb4a8cfa2c3b2672797b4aed3",
+                "url": "https://api.github.com/repos/neos/diff/zipball/375302baf7a27f4bb0379997330b4860fb3f9c13",
+                "reference": "375302baf7a27f4bb0379997330b4860fb3f9c13",
                 "shasum": ""
             },
             "require": {
@@ -1150,25 +1118,25 @@
                 "BSD-3-Clause"
             ],
             "description": "This is a comprehensive library for generating differences between two strings or arrays",
-            "time": "2018-10-31T09:28:06+00:00"
+            "time": "2016-11-23T15:06:35+00:00"
         },
         {
             "name": "neos/eel",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/eel.git",
-                "reference": "dc8a16b5e6d4200b855ce463337ca127233a8f8e"
+                "reference": "110b42eec30f329003f106c7c08ed51b00f22b70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/eel/zipball/dc8a16b5e6d4200b855ce463337ca127233a8f8e",
-                "reference": "dc8a16b5e6d4200b855ce463337ca127233a8f8e",
+                "url": "https://api.github.com/repos/neos/eel/zipball/110b42eec30f329003f106c7c08ed51b00f22b70",
+                "reference": "110b42eec30f329003f106c7c08ed51b00f22b70",
                 "shasum": ""
             },
             "require": {
                 "neos/cache": "*",
-                "neos/flow": "~5.2.0",
+                "neos/flow": "~4.3.0",
                 "neos/utility-objecthandling": "*",
                 "neos/utility-unicode": "*"
             },
@@ -1191,27 +1159,27 @@
                 "MIT"
             ],
             "description": "The Embedded Expression Language (Eel) is a building block for creating Domain Specific Languages",
-            "time": "2018-11-28T00:54:37+00:00"
+            "time": "2017-12-19T07:36:34+00:00"
         },
         {
             "name": "neos/error-messages",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/error-messages.git",
-                "reference": "9c8ea6b492b57521ba0cd6f97938e2071a664ff6"
+                "reference": "5151ea905882f6e41997ba296506ff5e52e4a86a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/error-messages/zipball/9c8ea6b492b57521ba0cd6f97938e2071a664ff6",
-                "reference": "9c8ea6b492b57521ba0cd6f97938e2071a664ff6",
+                "url": "https://api.github.com/repos/neos/error-messages/zipball/5151ea905882f6e41997ba296506ff5e52e4a86a",
+                "reference": "5151ea905882f6e41997ba296506ff5e52e4a86a",
                 "shasum": ""
             },
             "require": {
-                "php": "~7.1"
+                "php": "~7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~7.1"
+                "phpunit/phpunit": "~6.0"
             },
             "type": "library",
             "autoload": {
@@ -1225,55 +1193,52 @@
             ],
             "description": "Flow error messages",
             "homepage": "http://flow.neos.io",
-            "time": "2018-06-27T10:03:23+00:00"
+            "time": "2017-08-10T09:35:39+00:00"
         },
         {
             "name": "neos/flow",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/flow.git",
-                "reference": "d7317751b9669b9aeebf9369f183e61f9a006cbb"
+                "reference": "c2578f20a4fdb07a31582d28a632ed81069f919f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/flow/zipball/d7317751b9669b9aeebf9369f183e61f9a006cbb",
-                "reference": "d7317751b9669b9aeebf9369f183e61f9a006cbb",
+                "url": "https://api.github.com/repos/neos/flow/zipball/c2578f20a4fdb07a31582d28a632ed81069f919f",
+                "reference": "c2578f20a4fdb07a31582d28a632ed81069f919f",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": ">=2.4,<2.8-dev",
-                "doctrine/dbal": "~2.7.0",
-                "doctrine/migrations": "~1.8.1",
-                "doctrine/orm": "~2.6.0",
+                "doctrine/dbal": "~2.5.0",
+                "doctrine/migrations": "~1.3.0",
+                "doctrine/orm": "~2.5.0",
                 "ext-json": ">=1.2.0",
                 "ext-reflection": "*",
                 "ext-spl": "*",
-                "ext-xml": "*",
                 "ext-zlib": "*",
-                "neos/cache": "~5.2.0",
+                "neos/cache": "~4.3.0",
                 "neos/composer-plugin": "^2.0.0",
-                "neos/eel": "~5.2.0",
-                "neos/error-messages": "~5.2.0",
-                "neos/flow-log": "~5.2.0",
-                "neos/fluid-adaptor": "~5.2.0",
-                "neos/utility-arrays": "~5.2.0",
-                "neos/utility-files": "~5.2.0",
-                "neos/utility-lock": "~5.2.0",
-                "neos/utility-mediatypes": "~5.2.0",
-                "neos/utility-objecthandling": "~5.2.0",
-                "neos/utility-opcodecache": "~5.2.0",
-                "neos/utility-pdo": "~5.2.0",
-                "neos/utility-schema": "~5.2.0",
-                "neos/utility-unicode": "~5.2.0",
-                "php": "~7.1",
-                "psr/container": "~1.0.0",
+                "neos/eel": "~4.3.0",
+                "neos/error-messages": "~4.3.0",
+                "neos/flow-log": "~4.3.0",
+                "neos/fluid-adaptor": "~4.3.0",
+                "neos/utility-arrays": "~4.3.0",
+                "neos/utility-files": "~4.3.0",
+                "neos/utility-lock": "~4.3.0",
+                "neos/utility-mediatypes": "~4.3.0",
+                "neos/utility-objecthandling": "~4.3.0",
+                "neos/utility-opcodecache": "~4.3.0",
+                "neos/utility-pdo": "~4.3.0",
+                "neos/utility-schema": "~4.3.0",
+                "neos/utility-unicode": "~4.3.0",
+                "php": "~7.0",
                 "psr/http-message": "~1.0.0",
-                "psr/log": "^1.0",
                 "ramsey/uuid": "^3.0.0",
-                "symfony/console": "~4.1.1",
-                "symfony/dom-crawler": "~4.1.5",
-                "symfony/yaml": "~4.1.0"
+                "symfony/console": "~2.8",
+                "symfony/dom-crawler": "~2.8.0",
+                "symfony/yaml": "~2.8.0"
             },
             "replace": {
                 "typo3/flow": "self.version"
@@ -1305,32 +1270,25 @@
             ],
             "description": "Flow Application Framework",
             "homepage": "http://flow.neos.io",
-            "time": "2019-02-10T11:05:36+00:00"
+            "time": "2019-03-25T18:49:49+00:00"
         },
         {
             "name": "neos/flow-log",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/flow-log.git",
-                "reference": "d97db81c24fdd05aab608ce088475a0df000a262"
+                "reference": "72f65f0cb7a824129addb41373a6b7f01970d50c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/flow-log/zipball/d97db81c24fdd05aab608ce088475a0df000a262",
-                "reference": "d97db81c24fdd05aab608ce088475a0df000a262",
+                "url": "https://api.github.com/repos/neos/flow-log/zipball/72f65f0cb7a824129addb41373a6b7f01970d50c",
+                "reference": "72f65f0cb7a824129addb41373a6b7f01970d50c",
                 "shasum": ""
             },
             "require": {
                 "neos/utility-files": "*",
-                "php": "~7.1",
-                "psr/log": "^1.0.1"
-            },
-            "provide": {
-                "psr/log-implementation": "1.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0.0"
+                "php": "~7.0"
             },
             "type": "package",
             "extra": {
@@ -1349,29 +1307,28 @@
             ],
             "description": "Flow Framework Logger",
             "homepage": "http://flow.neos.io",
-            "time": "2018-10-03T12:18:05+00:00"
+            "time": "2018-04-20T10:41:56+00:00"
         },
         {
             "name": "neos/fluid-adaptor",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/fluidadaptor.git",
-                "reference": "628c81b6f490df08debf5b64bb8df91e6261a6d0"
+                "reference": "994333a8d0822d405775e7698e0aa6d9367f011d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/fluidadaptor/zipball/628c81b6f490df08debf5b64bb8df91e6261a6d0",
-                "reference": "628c81b6f490df08debf5b64bb8df91e6261a6d0",
+                "url": "https://api.github.com/repos/neos/fluidadaptor/zipball/994333a8d0822d405775e7698e0aa6d9367f011d",
+                "reference": "994333a8d0822d405775e7698e0aa6d9367f011d",
                 "shasum": ""
             },
             "require": {
                 "neos/cache": "*",
-                "neos/flow": "~5.2.0",
+                "neos/flow": "~4.3.0",
                 "neos/utility-files": "*",
                 "neos/utility-objecthandling": "*",
-                "psr/log": "^1.0",
-                "typo3fluid/fluid": "~2.5.3"
+                "typo3fluid/fluid": "~2.1.3"
             },
             "type": "neos-framework",
             "autoload": {
@@ -1384,7 +1341,7 @@
                 "MIT"
             ],
             "description": "Fluid Templating Framework Adaptor",
-            "time": "2018-12-10T10:18:26+00:00"
+            "time": "2018-11-29T12:25:36+00:00"
         },
         {
             "name": "neos/form",
@@ -1492,20 +1449,20 @@
         },
         {
             "name": "neos/fusion",
-            "version": "4.2.9",
+            "version": "3.3.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/typoscript.git",
-                "reference": "e6199c6fb7675dfd6fc8a7c047f91aba55b04bc6"
+                "reference": "106da170eec7a0d389394119d70950d8fcf8284a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/typoscript/zipball/e6199c6fb7675dfd6fc8a7c047f91aba55b04bc6",
-                "reference": "e6199c6fb7675dfd6fc8a7c047f91aba55b04bc6",
+                "url": "https://api.github.com/repos/neos/typoscript/zipball/106da170eec7a0d389394119d70950d8fcf8284a",
+                "reference": "106da170eec7a0d389394119d70950d8fcf8284a",
                 "shasum": ""
             },
             "require": {
-                "doctrine/orm": "~2.6.0",
+                "doctrine/orm": "~2.5.0",
                 "neos/cache": "*",
                 "neos/eel": "*",
                 "neos/flow": "*",
@@ -1581,23 +1538,7 @@
                     "Neos.Neos-20161125122412",
                     "TYPO3.FluidAdaptor-20161130112935",
                     "Neos.Fusion-20161201202543",
-                    "Neos.Fusion-20170120013047",
-                    "Neos.Flow-20180415105700",
-                    "Neos.Neos-20161201222211",
-                    "Neos.Fusion-20161202215034",
-                    "Neos.Fusion-20161219092345",
-                    "Neos.ContentRepository-20161219093512",
-                    "Neos.Media-20161219094126",
-                    "Neos.Neos-20161219094403",
-                    "Neos.Neos-20161219122512",
-                    "Neos.Fusion-20161219130100",
-                    "Neos.Neos-20161220163741",
-                    "Neos.Neos-20170115114620",
-                    "Neos.Flow-20170125103800",
-                    "Neos.Seo-20170127154600",
-                    "Neos.Flow-20170127183102",
-                    "Neos.Fusion-20180211175500",
-                    "Neos.Fusion-20180211184832"
+                    "Neos.Fusion-20170120013047"
                 ]
             },
             "autoload": {
@@ -1610,25 +1551,25 @@
                 "GPL-3.0-or-later"
             ],
             "description": "Fusion is a hierarchical, prototype based processing language",
-            "time": "2019-02-04T12:01:52+00:00"
+            "time": "2019-02-01T13:49:50+00:00"
         },
         {
             "name": "neos/fusion-afx",
-            "version": "v1.2.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/fusion-afx.git",
-                "reference": "b7574d371128251000d4e7499d9910f05558bb01"
+                "reference": "92d5950d58d9d8971686a0b2d14d27ccd3ebec98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/fusion-afx/zipball/b7574d371128251000d4e7499d9910f05558bb01",
-                "reference": "b7574d371128251000d4e7499d9910f05558bb01",
+                "url": "https://api.github.com/repos/neos/fusion-afx/zipball/92d5950d58d9d8971686a0b2d14d27ccd3ebec98",
+                "reference": "92d5950d58d9d8971686a0b2d14d27ccd3ebec98",
                 "shasum": ""
             },
             "require": {
-                "neos/fusion": "^4.2.0 || dev-master",
-                "packagefactory/afx": "^3.0.0"
+                "neos/fusion": "^3.2.0 || ^4.0.0 || dev-master",
+                "packagefactory/afx": "~2.0.1"
             },
             "replace": {
                 "packagefactory/atomicfusion-afx": "*"
@@ -1652,7 +1593,7 @@
                 "GPL-3.0-or-later"
             ],
             "description": "JSX inspired compact syntax for Neos.Fusion",
-            "time": "2018-11-14T17:26:47+00:00"
+            "time": "2018-11-14T17:00:22+00:00"
         },
         {
             "name": "neos/imagine",
@@ -1776,22 +1717,22 @@
         },
         {
             "name": "neos/media",
-            "version": "4.2.9",
+            "version": "3.3.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/media.git",
-                "reference": "1abae876b8f3bc1744c48dc84c8f6590f3112dd4"
+                "reference": "1f653f2514c08a3da68dceabc2e33c165af5a3a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/media/zipball/1abae876b8f3bc1744c48dc84c8f6590f3112dd4",
-                "reference": "1abae876b8f3bc1744c48dc84c8f6590f3112dd4",
+                "url": "https://api.github.com/repos/neos/media/zipball/1f653f2514c08a3da68dceabc2e33c165af5a3a6",
+                "reference": "1f653f2514c08a3da68dceabc2e33c165af5a3a6",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.7.0",
-                "doctrine/dbal": "~2.7.0",
-                "doctrine/orm": "~2.6.0",
+                "doctrine/dbal": "~2.5.0",
+                "doctrine/orm": "~2.5.0",
                 "imagine/imagine": "*",
                 "neos/cache": "*",
                 "neos/flow": "*",
@@ -1871,19 +1812,7 @@
                     "Neos.Fusion-20161202215034",
                     "Neos.ContentRepository-20161219093512",
                     "Neos.Media-20161219094126",
-                    "Neos.Fusion-20170120013047",
-                    "Neos.Fusion-20161219092345",
-                    "Neos.Neos-20161219094403",
-                    "Neos.Neos-20161219122512",
-                    "Neos.Fusion-20161219130100",
-                    "Neos.Neos-20161220163741",
-                    "Neos.Neos-20170115114620",
-                    "Neos.Flow-20170125103800",
-                    "Neos.Seo-20170127154600",
-                    "Neos.Flow-20170127183102",
-                    "Neos.Fusion-20180211175500",
-                    "Neos.Fusion-20180211184832",
-                    "Neos.Flow-20180415105700"
+                    "Neos.Fusion-20170120013047"
                 ]
             },
             "autoload": {
@@ -1896,25 +1825,25 @@
                 "GPL-3.0-or-later"
             ],
             "description": "The Media package",
-            "time": "2019-03-04T15:02:38+00:00"
+            "time": "2019-02-25T21:11:29+00:00"
         },
         {
             "name": "neos/media-browser",
-            "version": "4.2.9",
+            "version": "3.3.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/media-browser.git",
-                "reference": "0b803a163d8ae9e764675012846b8e8cf7d429a7"
+                "reference": "83c90c6c8e24a24c04f236c54d6967abca3851b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/media-browser/zipball/0b803a163d8ae9e764675012846b8e8cf7d429a7",
-                "reference": "0b803a163d8ae9e764675012846b8e8cf7d429a7",
+                "url": "https://api.github.com/repos/neos/media-browser/zipball/83c90c6c8e24a24c04f236c54d6967abca3851b3",
+                "reference": "83c90c6c8e24a24c04f236c54d6967abca3851b3",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.7.0",
-                "doctrine/orm": "~2.6.0",
+                "doctrine/orm": "~2.5.0",
                 "neos/content-repository": "self.version",
                 "neos/error-messages": "*",
                 "neos/flow": "*",
@@ -1988,23 +1917,7 @@
                     "Neos.Flow-20161125124112",
                     "TYPO3.FluidAdaptor-20161130112935",
                     "Neos.Fusion-20161201202543",
-                    "Neos.Fusion-20170120013047",
-                    "Neos.Neos-20161201222211",
-                    "Neos.Fusion-20161202215034",
-                    "Neos.Fusion-20161219092345",
-                    "Neos.ContentRepository-20161219093512",
-                    "Neos.Media-20161219094126",
-                    "Neos.Neos-20161219094403",
-                    "Neos.Neos-20161219122512",
-                    "Neos.Fusion-20161219130100",
-                    "Neos.Neos-20161220163741",
-                    "Neos.Neos-20170115114620",
-                    "Neos.Flow-20170125103800",
-                    "Neos.Seo-20170127154600",
-                    "Neos.Flow-20170127183102",
-                    "Neos.Fusion-20180211175500",
-                    "Neos.Fusion-20180211184832",
-                    "Neos.Flow-20180415105700"
+                    "Neos.Fusion-20170120013047"
                 ]
             },
             "autoload": {
@@ -2017,31 +1930,31 @@
                 "GPL-3.0-or-later"
             ],
             "description": "This module allows managing of media assets including pictures, videos, audio and documents.",
-            "time": "2019-03-04T15:02:38+00:00"
+            "time": "2019-02-03T23:44:18+00:00"
         },
         {
             "name": "neos/neos",
-            "version": "4.2.9",
+            "version": "3.3.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/neos.git",
-                "reference": "74d9810fa90239665fb11dd20eb80510594bf7fb"
+                "reference": "5f672769cbf24170e75afabe154cc599b5869d8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/neos/zipball/74d9810fa90239665fb11dd20eb80510594bf7fb",
-                "reference": "74d9810fa90239665fb11dd20eb80510594bf7fb",
+                "url": "https://api.github.com/repos/neos/neos/zipball/5f672769cbf24170e75afabe154cc599b5869d8f",
+                "reference": "5f672769cbf24170e75afabe154cc599b5869d8f",
                 "shasum": ""
             },
             "require": {
                 "behat/transliterator": "~1.0",
-                "neos/content-repository": "~4.2.0",
-                "neos/diff": "~4.2.0",
-                "neos/flow": "~5.2.0",
-                "neos/fluid-adaptor": "~5.2.0",
-                "neos/fusion": "~4.2.0",
-                "neos/media": "~4.2.0",
-                "neos/media-browser": "~4.2.0",
+                "neos/content-repository": "~3.3.0",
+                "neos/diff": "~3.3.0",
+                "neos/flow": "~4.3.0",
+                "neos/fluid-adaptor": "~4.3.0",
+                "neos/fusion": "~3.3.0",
+                "neos/media": "~3.3.0",
+                "neos/media-browser": "~3.3.0",
                 "neos/party": "*",
                 "neos/setup": "*",
                 "neos/twitter-bootstrap": "*"
@@ -2055,7 +1968,7 @@
             },
             "type": "neos-package",
             "extra": {
-                "neos/flow": {
+                "typo3/flow": {
                     "manage-resources": true
                 },
                 "neos": {
@@ -2135,13 +2048,7 @@
                     "Neos.Fusion-20161219130100",
                     "Neos.Neos-20161220163741",
                     "Neos.Fusion-20170120013047",
-                    "Neos.Flow-20170125103800",
-                    "Neos.Flow-20180415105700",
-                    "Neos.Neos-20170115114620",
-                    "Neos.Seo-20170127154600",
-                    "Neos.Flow-20170127183102",
-                    "Neos.Fusion-20180211175500",
-                    "Neos.Fusion-20180211184832"
+                    "Neos.Flow-20170125103800"
                 ]
             },
             "autoload": {
@@ -2154,24 +2061,24 @@
                 "GPL-3.0-or-later"
             ],
             "description": "An open source Content Application Platform based on Flow. A set of core Content Management features is resting within a larger context that allows you to build a perfectly customized experience for your users.",
-            "time": "2019-03-05T08:39:14+00:00"
+            "time": "2019-03-05T08:11:23+00:00"
         },
         {
             "name": "neos/neos-ui",
-            "version": "dev-master",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/neos-ui.git",
-                "reference": "769f50d67996017276672253536e87daf5840bb9"
+                "reference": "12c748580b8caf11e5eb0284d88adccc9024a1bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/neos-ui/zipball/769f50d67996017276672253536e87daf5840bb9",
-                "reference": "769f50d67996017276672253536e87daf5840bb9",
+                "url": "https://api.github.com/repos/neos/neos-ui/zipball/12c748580b8caf11e5eb0284d88adccc9024a1bc",
+                "reference": "12c748580b8caf11e5eb0284d88adccc9024a1bc",
                 "shasum": ""
             },
             "require": {
-                "neos/neos": "^4.0 || dev-master",
+                "neos/neos": "^3.3",
                 "neos/neos-ui-compiled": "self.version"
             },
             "type": "neos-package",
@@ -2263,20 +2170,20 @@
                 "GPL-3.0-or-later"
             ],
             "description": "Neos CMS UI written in React",
-            "time": "2019-03-19T06:07:16+00:00"
+            "time": "2019-03-26T10:09:08+00:00"
         },
         {
             "name": "neos/neos-ui-compiled",
-            "version": "dev-master",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/neos-ui-compiled.git",
-                "reference": "53200de793f12f36fa625f0fc6ba1ddce519b743"
+                "reference": "bfe91b508c4698cddfda1cbe4cec6ae691719262"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/neos-ui-compiled/zipball/53200de793f12f36fa625f0fc6ba1ddce519b743",
-                "reference": "53200de793f12f36fa625f0fc6ba1ddce519b743",
+                "url": "https://api.github.com/repos/neos/neos-ui-compiled/zipball/bfe91b508c4698cddfda1cbe4cec6ae691719262",
+                "reference": "bfe91b508c4698cddfda1cbe4cec6ae691719262",
                 "shasum": ""
             },
             "require": {
@@ -2294,24 +2201,24 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2019-03-19T06:13:45+00:00"
+            "time": "2019-03-26T09:56:16+00:00"
         },
         {
             "name": "neos/party",
-            "version": "5.0.1",
+            "version": "4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/party.git",
-                "reference": "c6d7b17c9aedcb3fe5dcd8ee0a0980d83986516c"
+                "reference": "d58a04d307e1add71d6b8d9a67e041c3da1d86f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/party/zipball/c6d7b17c9aedcb3fe5dcd8ee0a0980d83986516c",
-                "reference": "c6d7b17c9aedcb3fe5dcd8ee0a0980d83986516c",
+                "url": "https://api.github.com/repos/neos/party/zipball/d58a04d307e1add71d6b8d9a67e041c3da1d86f7",
+                "reference": "d58a04d307e1add71d6b8d9a67e041c3da1d86f7",
                 "shasum": ""
             },
             "require": {
-                "neos/flow": "~5.0 || dev-master"
+                "neos/flow": "~4.0 || dev-master"
             },
             "replace": {
                 "typo3/party": "self.version"
@@ -2319,7 +2226,7 @@
             "type": "neos-package",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.0.x-dev"
+                    "dev-master": "4.0.x-dev"
                 },
                 "applied-flow-migrations": [
                     "TYPO3.FLOW3-201201261636",
@@ -2373,24 +2280,24 @@
                 "MIT"
             ],
             "description": "A party package for PHP based on the OASIS Customer Information Quality (CIQ) XML Standard.",
-            "time": "2018-06-16T10:07:12+00:00"
+            "time": "2018-06-16T09:53:04+00:00"
         },
         {
             "name": "neos/setup",
-            "version": "4.0.6",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/setup.git",
-                "reference": "9af0a191e135c998a4b0e9e40de8cef537271e36"
+                "reference": "985e8c3bf45c9662f7eb1e814aff043efb5a5ba8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/setup/zipball/9af0a191e135c998a4b0e9e40de8cef537271e36",
-                "reference": "9af0a191e135c998a4b0e9e40de8cef537271e36",
+                "url": "https://api.github.com/repos/neos/setup/zipball/985e8c3bf45c9662f7eb1e814aff043efb5a5ba8",
+                "reference": "985e8c3bf45c9662f7eb1e814aff043efb5a5ba8",
                 "shasum": ""
             },
             "require": {
-                "neos/flow": "~5.0 || dev-master",
+                "neos/flow": "~4.0 || dev-master",
                 "neos/form": "~4.0 || dev-master",
                 "neos/twitter-bootstrap": "~3.0 || dev-master"
             },
@@ -2459,7 +2366,7 @@
                 "MIT"
             ],
             "description": "An extensible setup tool for Neos Flow based applications",
-            "time": "2018-09-03T09:03:46+00:00"
+            "time": "2018-01-25T07:52:59+00:00"
         },
         {
             "name": "neos/twitter-bootstrap",
@@ -2547,25 +2454,25 @@
         },
         {
             "name": "neos/utility-arrays",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-arrays.git",
-                "reference": "13e13742cb9b2073f37a825e109615824bc7ecd6"
+                "reference": "5d7a1a1745ea121e50252bab95add89400b28acc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/utility-arrays/zipball/13e13742cb9b2073f37a825e109615824bc7ecd6",
-                "reference": "13e13742cb9b2073f37a825e109615824bc7ecd6",
+                "url": "https://api.github.com/repos/neos/utility-arrays/zipball/5d7a1a1745ea121e50252bab95add89400b28acc",
+                "reference": "5d7a1a1745ea121e50252bab95add89400b28acc",
                 "shasum": ""
             },
             "require": {
                 "neos/utility-objecthandling": "*",
-                "php": "~7.1"
+                "php": "~7.0"
             },
             "require-dev": {
                 "mikey179/vfsstream": "~1.6",
-                "phpunit/phpunit": "~7.1"
+                "phpunit/phpunit": "~6.0"
             },
             "type": "library",
             "extra": {
@@ -2584,29 +2491,29 @@
             ],
             "description": "Flow Array Utilities",
             "homepage": "http://flow.neos.io",
-            "time": "2018-06-27T10:03:23+00:00"
+            "time": "2018-01-08T12:50:12+00:00"
         },
         {
             "name": "neos/utility-files",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-files.git",
-                "reference": "b9da4cd16e03063e3b6bee5f0bb64a3ce3a5022d"
+                "reference": "e62b485ce5de95fa04451fcb8d0164e2fd5a7564"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/utility-files/zipball/b9da4cd16e03063e3b6bee5f0bb64a3ce3a5022d",
-                "reference": "b9da4cd16e03063e3b6bee5f0bb64a3ce3a5022d",
+                "url": "https://api.github.com/repos/neos/utility-files/zipball/e62b485ce5de95fa04451fcb8d0164e2fd5a7564",
+                "reference": "e62b485ce5de95fa04451fcb8d0164e2fd5a7564",
                 "shasum": ""
             },
             "require": {
                 "neos/error-messages": "*",
-                "php": "~7.1"
+                "php": "~7.0"
             },
             "require-dev": {
                 "mikey179/vfsstream": "~1.6",
-                "phpunit/phpunit": "~7.1"
+                "phpunit/phpunit": "~6.0"
             },
             "type": "library",
             "extra": {
@@ -2625,30 +2532,30 @@
             ],
             "description": "Flow Files Utilities",
             "homepage": "http://flow.neos.io",
-            "time": "2018-10-24T07:01:32+00:00"
+            "time": "2018-08-10T07:35:50+00:00"
         },
         {
             "name": "neos/utility-lock",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-lock.git",
-                "reference": "b9a59db6cf3d1876aeed88fca7df44d7ccf5c8f1"
+                "reference": "0e9029d878a6564f8d5db3460fc1ca56cbaae122"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/utility-lock/zipball/b9a59db6cf3d1876aeed88fca7df44d7ccf5c8f1",
-                "reference": "b9a59db6cf3d1876aeed88fca7df44d7ccf5c8f1",
+                "url": "https://api.github.com/repos/neos/utility-lock/zipball/0e9029d878a6564f8d5db3460fc1ca56cbaae122",
+                "reference": "0e9029d878a6564f8d5db3460fc1ca56cbaae122",
                 "shasum": ""
             },
             "require": {
                 "neos/flow": "*",
                 "neos/utility-files": "*",
-                "php": "~7.1"
+                "php": "~7.0"
             },
             "require-dev": {
                 "mikey179/vfsstream": "~1.6",
-                "phpunit/phpunit": "~7.1"
+                "phpunit/phpunit": "~6.0"
             },
             "type": "library",
             "autoload": {
@@ -2662,29 +2569,29 @@
             ],
             "description": "Flow Locking Implementation",
             "homepage": "http://flow.neos.io",
-            "time": "2018-06-27T10:03:23+00:00"
+            "time": "2018-01-08T12:50:12+00:00"
         },
         {
             "name": "neos/utility-mediatypes",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-mediatypes.git",
-                "reference": "bcd8f5128c721858d2c2db0d4ceeef9999f082f1"
+                "reference": "c99d87b56c2329280d9a32769976a8365cf53e3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/utility-mediatypes/zipball/bcd8f5128c721858d2c2db0d4ceeef9999f082f1",
-                "reference": "bcd8f5128c721858d2c2db0d4ceeef9999f082f1",
+                "url": "https://api.github.com/repos/neos/utility-mediatypes/zipball/c99d87b56c2329280d9a32769976a8365cf53e3f",
+                "reference": "c99d87b56c2329280d9a32769976a8365cf53e3f",
                 "shasum": ""
             },
             "require": {
-                "php": "~7.1"
+                "php": "~7.0"
             },
             "require-dev": {
                 "mikey179/vfsstream": "~1.6",
                 "neos/flow": "*",
-                "phpunit/phpunit": "~7.1"
+                "phpunit/phpunit": "~6.0"
             },
             "type": "library",
             "extra": {
@@ -2703,29 +2610,29 @@
             ],
             "description": "Flow Media Types Utilities",
             "homepage": "http://flow.neos.io",
-            "time": "2019-01-10T08:43:17+00:00"
+            "time": "2018-12-12T21:12:47+00:00"
         },
         {
             "name": "neos/utility-objecthandling",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-objecthandling.git",
-                "reference": "d0285da6eb5c572b0933ef8824e0efa6e75c257d"
+                "reference": "beb1f4ff8d5c6d9e715dc3051b813412f1ce3796"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/utility-objecthandling/zipball/d0285da6eb5c572b0933ef8824e0efa6e75c257d",
-                "reference": "d0285da6eb5c572b0933ef8824e0efa6e75c257d",
+                "url": "https://api.github.com/repos/neos/utility-objecthandling/zipball/beb1f4ff8d5c6d9e715dc3051b813412f1ce3796",
+                "reference": "beb1f4ff8d5c6d9e715dc3051b813412f1ce3796",
                 "shasum": ""
             },
             "require": {
-                "php": "~7.1"
+                "php": "~7.0"
             },
             "require-dev": {
                 "doctrine/common": ">=2.4,<2.8-dev",
-                "doctrine/orm": "~2.6.0",
-                "phpunit/phpunit": "~7.1"
+                "doctrine/orm": "~2.5.0",
+                "phpunit/phpunit": "~6.0"
             },
             "type": "library",
             "extra": {
@@ -2744,24 +2651,24 @@
             ],
             "description": "Flow array/object property and type utilities",
             "homepage": "http://flow.neos.io",
-            "time": "2018-11-26T10:33:10+00:00"
+            "time": "2017-07-28T11:50:55+00:00"
         },
         {
             "name": "neos/utility-opcodecache",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-opcodecache.git",
-                "reference": "e3a7536809c90dedb93bd8e6e98184728aeb9daa"
+                "reference": "ad6343bc86d64d9344a78e13d507c8d8cdc8daf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/utility-opcodecache/zipball/e3a7536809c90dedb93bd8e6e98184728aeb9daa",
-                "reference": "e3a7536809c90dedb93bd8e6e98184728aeb9daa",
+                "url": "https://api.github.com/repos/neos/utility-opcodecache/zipball/ad6343bc86d64d9344a78e13d507c8d8cdc8daf6",
+                "reference": "ad6343bc86d64d9344a78e13d507c8d8cdc8daf6",
                 "shasum": ""
             },
             "require": {
-                "php": "~7.1"
+                "php": "~7.0"
             },
             "type": "library",
             "extra": {
@@ -2780,24 +2687,24 @@
             ],
             "description": "Flow Opcode Cache Utilities",
             "homepage": "http://flow.neos.io",
-            "time": "2017-12-29T20:04:27+00:00"
+            "time": "2017-07-16T15:41:49+00:00"
         },
         {
             "name": "neos/utility-pdo",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-pdo.git",
-                "reference": "3091215c460563347f53ac5fb39349ab663acc0f"
+                "reference": "0e02f584f78cf45093e3dbdd6195ecdd35ac9a73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/utility-pdo/zipball/3091215c460563347f53ac5fb39349ab663acc0f",
-                "reference": "3091215c460563347f53ac5fb39349ab663acc0f",
+                "url": "https://api.github.com/repos/neos/utility-pdo/zipball/0e02f584f78cf45093e3dbdd6195ecdd35ac9a73",
+                "reference": "0e02f584f78cf45093e3dbdd6195ecdd35ac9a73",
                 "shasum": ""
             },
             "require": {
-                "php": "~7.1"
+                "php": "~7.0"
             },
             "type": "library",
             "extra": {
@@ -2816,29 +2723,29 @@
             ],
             "description": "Flow PDO Utilities",
             "homepage": "http://flow.neos.io",
-            "time": "2018-04-17T12:43:53+00:00"
+            "time": "2017-07-16T15:45:03+00:00"
         },
         {
             "name": "neos/utility-schema",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-schema.git",
-                "reference": "a0796265e00a889baaf08012308a5605d3ee65eb"
+                "reference": "fbf6010f55a34f12de689bcbfee1e4eba28c166b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/utility-schema/zipball/a0796265e00a889baaf08012308a5605d3ee65eb",
-                "reference": "a0796265e00a889baaf08012308a5605d3ee65eb",
+                "url": "https://api.github.com/repos/neos/utility-schema/zipball/fbf6010f55a34f12de689bcbfee1e4eba28c166b",
+                "reference": "fbf6010f55a34f12de689bcbfee1e4eba28c166b",
                 "shasum": ""
             },
             "require": {
                 "neos/error-messages": "*",
-                "php": "~7.1"
+                "php": "~7.0"
             },
             "require-dev": {
                 "mikey179/vfsstream": "~1.6",
-                "phpunit/phpunit": "~7.1"
+                "phpunit/phpunit": "~6.0"
             },
             "type": "library",
             "extra": {
@@ -2857,29 +2764,29 @@
             ],
             "description": "Flow Schema Utilities",
             "homepage": "http://flow.neos.io",
-            "time": "2018-10-24T07:01:32+00:00"
+            "time": "2017-07-16T16:53:22+00:00"
         },
         {
             "name": "neos/utility-unicode",
-            "version": "5.2.3",
+            "version": "4.3.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/utility-unicode.git",
-                "reference": "7b5e40bc2a8530068d2a0ec0058719202689d465"
+                "reference": "5422f00ef5d5d532d2391268c4caec81ebeb46af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/utility-unicode/zipball/7b5e40bc2a8530068d2a0ec0058719202689d465",
-                "reference": "7b5e40bc2a8530068d2a0ec0058719202689d465",
+                "url": "https://api.github.com/repos/neos/utility-unicode/zipball/5422f00ef5d5d532d2391268c4caec81ebeb46af",
+                "reference": "5422f00ef5d5d532d2391268c4caec81ebeb46af",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": "~7.1"
+                "php": "~7.0"
             },
             "require-dev": {
                 "mikey179/vfsstream": "~1.6",
-                "phpunit/phpunit": "~7.1"
+                "phpunit/phpunit": "~6.0"
             },
             "type": "library",
             "autoload": {
@@ -2893,7 +2800,7 @@
             ],
             "description": "Flow Unicode Utilities",
             "homepage": "http://flow.neos.io",
-            "time": "2018-10-24T07:01:32+00:00"
+            "time": "2018-04-20T10:39:44+00:00"
         },
         {
             "name": "ocramius/package-versions",
@@ -3016,16 +2923,16 @@
         },
         {
             "name": "packagefactory/afx",
-            "version": "v3.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PackageFactory/afx.git",
-                "reference": "52e11d86c75c74cc34ed195103cf697dae1f82ad"
+                "reference": "391c83ceb5c31f8e82811a4570b6473e11242441"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PackageFactory/afx/zipball/52e11d86c75c74cc34ed195103cf697dae1f82ad",
-                "reference": "52e11d86c75c74cc34ed195103cf697dae1f82ad",
+                "url": "https://api.github.com/repos/PackageFactory/afx/zipball/391c83ceb5c31f8e82811a4570b6473e11242441",
+                "reference": "391c83ceb5c31f8e82811a4570b6473e11242441",
                 "shasum": ""
             },
             "require-dev": {
@@ -3048,7 +2955,7 @@
                 }
             ],
             "description": "An Afx parser for PHP",
-            "time": "2018-10-30T07:09:50+00:00"
+            "time": "2017-05-30T15:57:19+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3094,101 +3001,6 @@
                 "random"
             ],
             "time": "2018-07-02T15:55:56+00:00"
-        },
-        {
-            "name": "psr/cache",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/cache.git",
-                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
-                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Cache\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for caching libraries",
-            "keywords": [
-                "cache",
-                "psr",
-                "psr-6"
-            ],
-            "time": "2016-08-06T20:24:11+00:00"
-        },
-        {
-            "name": "psr/container",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/container.git",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Container\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common Container Interface (PHP FIG PSR-11)",
-            "homepage": "https://github.com/php-fig/container",
-            "keywords": [
-                "PSR-11",
-                "container",
-                "container-interface",
-                "container-interop",
-                "psr"
-            ],
-            "time": "2017-02-14T16:28:37+00:00"
         },
         {
             "name": "psr/http-message",
@@ -3288,54 +3100,6 @@
             "time": "2018-11-20T15:27:04+00:00"
         },
         {
-            "name": "psr/simple-cache",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\SimpleCache\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interfaces for simple caching",
-            "keywords": [
-                "cache",
-                "caching",
-                "psr",
-                "psr-16",
-                "simple-cache"
-            ],
-            "time": "2017-10-23T01:57:42+00:00"
-        },
-        {
             "name": "ramsey/uuid",
             "version": "3.8.0",
             "source": {
@@ -3419,47 +3183,37 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.1.11",
+            "version": "v2.8.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "9e87c798f67dc9fceeb4f3d57847b52d945d1a02"
+                "reference": "cbcf4b5e233af15cd2bbd50dee1ccc9b7927dc12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9e87c798f67dc9fceeb4f3d57847b52d945d1a02",
-                "reference": "9e87c798f67dc9fceeb4f3d57847b52d945d1a02",
+                "url": "https://api.github.com/repos/symfony/console/zipball/cbcf4b5e233af15cd2bbd50dee1ccc9b7927dc12",
+                "reference": "cbcf4b5e233af15cd2bbd50dee1ccc9b7927dc12",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": ">=5.3.9",
+                "symfony/debug": "^2.7.2|~3.0.0",
                 "symfony/polyfill-mbstring": "~1.0"
-            },
-            "conflict": {
-                "symfony/dependency-injection": "<3.4",
-                "symfony/process": "<3.3"
-            },
-            "provide": {
-                "psr/log-implementation": "1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~3.4|~4.0",
-                "symfony/dependency-injection": "~3.4|~4.0",
-                "symfony/event-dispatcher": "~3.4|~4.0",
-                "symfony/lock": "~3.4|~4.0",
-                "symfony/process": "~3.4|~4.0"
+                "symfony/event-dispatcher": "~2.1|~3.0.0",
+                "symfony/process": "~2.1|~3.0.0"
             },
             "suggest": {
-                "psr/log": "For using the console logger",
+                "psr/log-implementation": "For using the console logger",
                 "symfony/event-dispatcher": "",
-                "symfony/lock": "",
                 "symfony/process": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -3486,29 +3240,86 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-25T14:34:37+00:00"
+            "time": "2018-11-20T15:55:20+00:00"
         },
         {
-            "name": "symfony/dom-crawler",
-            "version": "v4.1.11",
+            "name": "symfony/debug",
+            "version": "v3.0.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "191419afb4e38633a7dd6dfe1450c2211a057e9e"
+                "url": "https://github.com/symfony/debug.git",
+                "reference": "697c527acd9ea1b2d3efac34d9806bf255278b0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/191419afb4e38633a7dd6dfe1450c2211a057e9e",
-                "reference": "191419afb4e38633a7dd6dfe1450c2211a057e9e",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/697c527acd9ea1b2d3efac34d9806bf255278b0a",
+                "reference": "697c527acd9ea1b2d3efac34d9806bf255278b0a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": ">=5.5.9",
+                "psr/log": "~1.0"
+            },
+            "conflict": {
+                "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
+            },
+            "require-dev": {
+                "symfony/class-loader": "~2.8|~3.0",
+                "symfony/http-kernel": "~2.8|~3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Debug\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Debug Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-07-30T07:22:48+00:00"
+        },
+        {
+            "name": "symfony/dom-crawler",
+            "version": "v2.8.49",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "2cdc7d3909eea6f982a6298d2e9ab7db01b6403c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/2cdc7d3909eea6f982a6298d2e9ab7db01b6403c",
+                "reference": "2cdc7d3909eea6f982a6298d2e9ab7db01b6403c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
-                "symfony/css-selector": "~3.4|~4.0"
+                "symfony/css-selector": "~2.8|~3.0.0"
             },
             "suggest": {
                 "symfony/css-selector": ""
@@ -3516,7 +3327,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -3543,20 +3354,20 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-16T19:07:26+00:00"
+            "time": "2018-11-24T22:30:19+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.10.0",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+                "reference": "82ebae02209c21113908c229e9883c419720738a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/82ebae02209c21113908c229e9883c419720738a",
+                "reference": "82ebae02209c21113908c229e9883c419720738a",
                 "shasum": ""
             },
             "require": {
@@ -3568,7 +3379,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.11-dev"
                 }
             },
             "autoload": {
@@ -3590,7 +3401,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -3601,20 +3412,20 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2018-08-06T14:22:27+00:00"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.10.0",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494"
+                "reference": "fe5e94c604826c35a32fa832f35bd036b6799609"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/c79c051f5b3a46be09205c73b80b346e4153e494",
-                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fe5e94c604826c35a32fa832f35bd036b6799609",
+                "reference": "fe5e94c604826c35a32fa832f35bd036b6799609",
                 "shasum": ""
             },
             "require": {
@@ -3626,7 +3437,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.11-dev"
                 }
             },
             "autoload": {
@@ -3660,39 +3471,30 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-09-21T13:07:52+00:00"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v4.1.11",
+            "version": "v2.8.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "874d9210fe0ad4f6326a45d163ad815a71ad8b38"
+                "reference": "02c1859112aa779d9ab394ae4f3381911d84052b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/874d9210fe0ad4f6326a45d163ad815a71ad8b38",
-                "reference": "874d9210fe0ad4f6326a45d163ad815a71ad8b38",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/02c1859112aa779d9ab394ae4f3381911d84052b",
+                "reference": "02c1859112aa779d9ab394ae4f3381911d84052b",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": ">=5.3.9",
                 "symfony/polyfill-ctype": "~1.8"
-            },
-            "conflict": {
-                "symfony/console": "<3.4"
-            },
-            "require-dev": {
-                "symfony/console": "~3.4|~4.0"
-            },
-            "suggest": {
-                "symfony/console": "For validating YAML files using the lint command"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "2.8-dev"
                 }
             },
             "autoload": {
@@ -3719,20 +3521,20 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-16T19:07:26+00:00"
+            "time": "2018-11-11T11:18:13+00:00"
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.5.4",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "bcd0ff44dd3c4f9d0f37097b0237db6319c2b181"
+                "reference": "52ccc0a1d4f1039b95a289dc44b2f6885a463799"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/bcd0ff44dd3c4f9d0f37097b0237db6319c2b181",
-                "reference": "bcd0ff44dd3c4f9d0f37097b0237db6319c2b181",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/52ccc0a1d4f1039b95a289dc44b2f6885a463799",
+                "reference": "52ccc0a1d4f1039b95a289dc44b2f6885a463799",
                 "shasum": ""
             },
             "require": {
@@ -3755,10 +3557,10 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-3.0-or-later"
+                "LGPL-3.0"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2018-07-09T12:55:32+00:00"
+            "time": "2017-01-20T21:49:18+00:00"
         },
         {
             "name": "wwwision/neos-creationdialogproperties",
