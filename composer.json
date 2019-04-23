@@ -4,14 +4,14 @@
         "bin-dir": "bin"
     },
     "require": {
-        "neos/neos": "~3.3.0",
-        "neos/neos-ui": "2.x-dev",
-        "neos/neos-ui-compiled": "2.x-dev",
+        "neos/neos": "~4.3.0",
+        "neos/neos-ui": "@dev",
+        "neos/neos-ui-compiled": "@dev",
         "neos/issues": "@dev"
     },
     "extra": {
-        "require-4-2": {
-            "neos/neos": "~4.2.0",
+        "require-4-3": {
+            "neos/neos": "~4.3.0",
             "neos/neos-ui": "@dev",
             "neos/neos-ui-compiled": "@dev",
             "neos/issues": "@dev"

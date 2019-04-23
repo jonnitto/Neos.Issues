@@ -3,10 +3,7 @@
     "type": "neos-site",
     "require": {
         "neos/neos": "*",
-        "neos/fusion-afx": "*",
-        "neos/neos-ui": "*",
-        "wwwision/neos-creationdialogproperties": "^0.5.0",
-        "flowpack/nodetemplates": "^1.0"
+        "neos/fusion-afx": "*"
     },
     "authors": [
         {
