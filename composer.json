@@ -4,28 +4,34 @@
         "bin-dir": "bin"
     },
     "require": {
-        "neos/neos": "~4.3.0",
+        "neos/neos": "~5.1.0",
         "neos/neos-ui": "*",
         "neos/issues": "@dev"
     },
     "extra": {
         "dev": {
-            "neos/neos-development-collection": "4.3.x-dev",
-            "neos/flow-development-collection": "5.3.x-dev",
+            "neos/neos-development-collection": "5.1.x-dev",
+            "neos/flow-development-collection": "6.1.x-dev",
             "neos/neos-ui": "@dev",
             "neos/neos-ui-compiled": "@dev",
             "neos/demo": "@dev"
         },
+        "require-5-1": {
+            "neos/neos": "~5.1.0",
+            "neos/neos-ui": "5.1-dev",
+            "neos/neos-ui-compiled": "5.1-dev",
+            "neos/issues": "@dev"
+        },
         "require-4-3": {
             "neos/neos": "~4.3.0",
-            "neos/neos-ui": "@dev",
-            "neos/neos-ui-compiled": "@dev",
+            "neos/neos-ui": "4.0-dev",
+            "neos/neos-ui-compiled": "4.0-dev",
             "neos/issues": "@dev"
         },
         "require-3-3": {
             "neos/neos": "~3.3.0",
-            "neos/neos-ui": "2.x-dev",
-            "neos/neos-ui-compiled": "2.x-dev",
+            "neos/neos-ui": "3.x-dev",
+            "neos/neos-ui-compiled": "3.x-dev",
             "neos/issues": "@dev"
         }
     },
