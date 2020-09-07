@@ -4,17 +4,43 @@
         "bin-dir": "bin"
     },
     "require": {
-        "neos/neos": "~5.1.0",
-        "neos/neos-ui": "*",
+        "neos/neos": "~5.2",
+        "neos/neos-ui": "^5.0",
         "neos/issues": "@dev"
     },
     "extra": {
+        "pin-to-specific-version": {
+            "neos/neos": "4.3.12",
+            "neos/fusion": "4.3.12",
+            "neos/diff": "4.3.12",
+            "neos/flow": "5.3.14",
+            "neos/fluid-adaptor": "5.3.14",
+            "neos/utility-schema": "5.3.14",
+            "neos/utility-mediatypes": "5.3.14",
+            "neos/eel": "5.3.14",
+            "neos/cache": "5.3.14",
+            "neos/error-messages": "5.3.14",
+            "neos/flow-log": "5.3.14",
+            "neos/utility-arrays": "5.3.14",
+            "neos/utility-files": "5.3.14",
+            "neos/utility-lock": "5.3.14",
+            "neos/utility-objecthandling": "5.3.14",
+            "neos/utility-opcodecache": "5.3.14",
+            "neos/utility-pdo": "5.3.14",
+            "neos/utility-unicode": "5.3.14"
+        },
         "dev": {
-            "neos/neos-development-collection": "5.1.x-dev",
-            "neos/flow-development-collection": "6.1.x-dev",
+            "neos/neos-development-collection": "5.2.x-dev",
+            "neos/flow-development-collection": "6.2.x-dev",
             "neos/neos-ui": "@dev",
             "neos/neos-ui-compiled": "@dev",
             "neos/demo": "@dev"
+        },
+        "require-5-2": {
+            "neos/neos": "~5.2.0",
+            "neos/neos-ui": "5.2-dev",
+            "neos/neos-ui-compiled": "5.2-dev",
+            "neos/issues": "@dev"
         },
         "require-5-1": {
             "neos/neos": "~5.1.0",
@@ -26,12 +52,6 @@
             "neos/neos": "~4.3.0",
             "neos/neos-ui": "4.0-dev",
             "neos/neos-ui-compiled": "4.0-dev",
-            "neos/issues": "@dev"
-        },
-        "require-3-3": {
-            "neos/neos": "~3.3.0",
-            "neos/neos-ui": "3.x-dev",
-            "neos/neos-ui-compiled": "3.x-dev",
             "neos/issues": "@dev"
         }
     },
