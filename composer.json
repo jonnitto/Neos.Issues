@@ -4,8 +4,10 @@
         "bin-dir": "bin"
     },
     "require": {
-        "neos/neos": "~5.2",
-        "neos/neos-ui": "^5.0",
+        "neos/neos-development-collection": "5.3.x-dev",
+        "neos/flow-development-collection": "6.3.x-dev",
+        "neos/neos-ui": "5.3.x-dev",
+        "neos/neos-ui-compiled": "5.3.x-dev",
         "neos/issues": "@dev"
     },
     "extra": {
@@ -27,14 +29,15 @@
             "neos/utility-objecthandling": "5.3.14",
             "neos/utility-opcodecache": "5.3.14",
             "neos/utility-pdo": "5.3.14",
-            "neos/utility-unicode": "5.3.14"
+            "neos/utility-unicode": "5.3.14",
+            "neos/issues": "@dev"
         },
         "dev": {
-            "neos/neos-development-collection": "5.2.x-dev",
-            "neos/flow-development-collection": "6.2.x-dev",
-            "neos/neos-ui": "@dev",
-            "neos/neos-ui-compiled": "@dev",
-            "neos/demo": "@dev"
+            "neos/neos-development-collection": "5.3.x-dev",
+            "neos/flow-development-collection": "6.3.x-dev",
+            "neos/neos-ui": "5.3.x-dev",
+            "neos/neos-ui-compiled": "5.3.x-dev",
+            "neos/issues": "@dev"
         },
         "require-5-2": {
             "neos/neos": "~5.2.0",
