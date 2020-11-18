@@ -1575,6 +1575,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
         },
         {
@@ -1894,12 +1895,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/flow-development-collection.git",
-                "reference": "18ccecc11225d2ba944af0eac04b53362c3fa58e"
+                "reference": "85e63f344c82e7d3103d5112ada8407a8426304b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/flow-development-collection/zipball/18ccecc11225d2ba944af0eac04b53362c3fa58e",
-                "reference": "18ccecc11225d2ba944af0eac04b53362c3fa58e",
+                "url": "https://api.github.com/repos/neos/flow-development-collection/zipball/85e63f344c82e7d3103d5112ada8407a8426304b",
+                "reference": "85e63f344c82e7d3103d5112ada8407a8426304b",
                 "shasum": ""
             },
             "require": {
@@ -1954,7 +1955,7 @@
                 "doctrine/orm": "^2.6",
                 "mikey179/vfsstream": "~1.6",
                 "phpunit/phpunit": "~8.1",
-                "vimeo/psalm": "~3.10.0"
+                "vimeo/psalm": "~4.1.1"
             },
             "suggest": {
                 "doctrine/data-fixtures": "To manage and execute the loading of data fixtures for the Doctrine ORM or ODM",
@@ -2026,7 +2027,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-09-07T03:44:35+00:00"
+            "time": "2020-11-16T19:29:32+00:00"
         },
         {
             "name": "neos/form",
@@ -2359,12 +2360,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/neos-development-collection.git",
-                "reference": "e887de83f161d88e74e772177b1bb18691461f93"
+                "reference": "2519815658ddbbce28f65f63fe8389ee1aa80851"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/neos-development-collection/zipball/e887de83f161d88e74e772177b1bb18691461f93",
-                "reference": "e887de83f161d88e74e772177b1bb18691461f93",
+                "url": "https://api.github.com/repos/neos/neos-development-collection/zipball/2519815658ddbbce28f65f63fe8389ee1aa80851",
+                "reference": "2519815658ddbbce28f65f63fe8389ee1aa80851",
                 "shasum": ""
             },
             "require": {
@@ -2497,7 +2498,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-09-06T15:44:39+00:00"
+            "time": "2020-11-13T04:37:34+00:00"
         },
         {
             "name": "neos/neos-setup",
@@ -2618,12 +2619,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/neos-ui.git",
-                "reference": "95de3890badf9f48736553ffe4346c89e3a45af5"
+                "reference": "5b34f50cebc9256ff0513faf7ff1ed09c9da7b66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/neos-ui/zipball/95de3890badf9f48736553ffe4346c89e3a45af5",
-                "reference": "95de3890badf9f48736553ffe4346c89e3a45af5",
+                "url": "https://api.github.com/repos/neos/neos-ui/zipball/5b34f50cebc9256ff0513faf7ff1ed09c9da7b66",
+                "reference": "5b34f50cebc9256ff0513faf7ff1ed09c9da7b66",
                 "shasum": ""
             },
             "require": {
@@ -2725,7 +2726,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-08-19T07:24:54+00:00"
+            "time": "2020-11-18T12:55:14+00:00"
         },
         {
             "name": "neos/neos-ui-compiled",
@@ -2733,12 +2734,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/neos-ui-compiled.git",
-                "reference": "62dfa36b48c12cb218395803fb7fb27e1b4f10de"
+                "reference": "51dd63e6cfb658372fedb421705adabc3a487cb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/neos-ui-compiled/zipball/62dfa36b48c12cb218395803fb7fb27e1b4f10de",
-                "reference": "62dfa36b48c12cb218395803fb7fb27e1b4f10de",
+                "url": "https://api.github.com/repos/neos/neos-ui-compiled/zipball/51dd63e6cfb658372fedb421705adabc3a487cb0",
+                "reference": "51dd63e6cfb658372fedb421705adabc3a487cb0",
                 "shasum": ""
             },
             "require": {
@@ -2756,7 +2757,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2020-08-19T07:21:45+00:00"
+            "time": "2020-11-18T13:06:25+00:00"
         },
         {
             "name": "neos/party",
@@ -4642,16 +4643,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.6.9",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "ba05e165bb4fd1302edf3f0280a149992e8c79be"
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/ba05e165bb4fd1302edf3f0280a149992e8c79be",
-                "reference": "ba05e165bb4fd1302edf3f0280a149992e8c79be",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
                 "shasum": ""
             },
             "require": {
@@ -4677,7 +4678,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2020-02-03T10:46:43+00:00"
+            "time": "2020-11-16T21:38:14+00:00"
         },
         {
             "name": "zendframework/zend-code",
