@@ -1911,16 +1911,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/flow-development-collection.git",
-                "reference": "18ccecc11225d2ba944af0eac04b53362c3fa58e"
+                "reference": "934f32cd29faffc312024d0c7bee19fd14c657ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/flow-development-collection/zipball/18ccecc11225d2ba944af0eac04b53362c3fa58e",
-                "reference": "18ccecc11225d2ba944af0eac04b53362c3fa58e",
+                "url": "https://api.github.com/repos/neos/flow-development-collection/zipball/934f32cd29faffc312024d0c7bee19fd14c657ed",
+                "reference": "934f32cd29faffc312024d0c7bee19fd14c657ed",
                 "shasum": ""
             },
             "require": {
-                "composer/composer": "^1.9",
+                "composer/composer": "^1.9 || ^2.0",
                 "doctrine/common": "^2.4",
                 "doctrine/dbal": "^2.9",
                 "doctrine/migrations": "^1.8",
@@ -1931,7 +1931,7 @@
                 "ext-spl": "*",
                 "ext-xml": "*",
                 "ext-zlib": "*",
-                "guzzlehttp/psr7": "^1.4 || ~2.0",
+                "guzzlehttp/psr7": "^1.4, !=1.8.0 || ~2.0",
                 "neos/composer-plugin": "^2.0",
                 "php": "^7.2",
                 "psr/cache": "~1.0",
@@ -1946,7 +1946,7 @@
                 "symfony/console": "^4.2",
                 "symfony/dom-crawler": "^4.2",
                 "symfony/yaml": "^4.2",
-                "typo3fluid/fluid": "^2.5"
+                "typo3fluid/fluid": "~2.5.11 || ^2.6.10"
             },
             "replace": {
                 "neos/cache": "self.version",
@@ -1964,14 +1964,19 @@
                 "neos/utility-opcodecache": "self.version",
                 "neos/utility-pdo": "self.version",
                 "neos/utility-schema": "self.version",
-                "neos/utility-unicode": "self.version"
+                "neos/utility-unicode": "self.version",
+                "symfony/polyfill-mbstring": "*",
+                "symfony/polyfill-php54": "*",
+                "symfony/polyfill-php55": "*",
+                "symfony/polyfill-php56": "*",
+                "symfony/polyfill-php70": "*",
+                "symfony/polyfill-php71": "*",
+                "symfony/polyfill-php72": "*"
             },
             "require-dev": {
-                "doctrine/common": "^2.4",
-                "doctrine/orm": "^2.6",
-                "mikey179/vfsstream": "~1.6",
+                "mikey179/vfsstream": "^1.6.1",
                 "phpunit/phpunit": "~8.1",
-                "vimeo/psalm": "~3.10.0"
+                "vimeo/psalm": "~4.1.1"
             },
             "suggest": {
                 "doctrine/data-fixtures": "To manage and execute the loading of data fixtures for the Doctrine ORM or ODM",
@@ -2043,7 +2048,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-09-07T03:44:35+00:00"
+            "time": "2021-04-25T08:43:03+00:00"
         },
         {
             "name": "neos/form",
@@ -2641,12 +2646,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/neos-ui.git",
-                "reference": "c53cbb5a4fcce6f973812a1c55c2bea95249b1c2"
+                "reference": "ab7af0445d4351b80cc7bc2446b87daa27d60d50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/neos-ui/zipball/c53cbb5a4fcce6f973812a1c55c2bea95249b1c2",
-                "reference": "c53cbb5a4fcce6f973812a1c55c2bea95249b1c2",
+                "url": "https://api.github.com/repos/neos/neos-ui/zipball/ab7af0445d4351b80cc7bc2446b87daa27d60d50",
+                "reference": "ab7af0445d4351b80cc7bc2446b87daa27d60d50",
                 "shasum": ""
             },
             "require": {
@@ -2748,7 +2753,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-04-19T06:49:59+00:00"
+            "time": "2021-04-30T05:54:13+00:00"
         },
         {
             "name": "neos/neos-ui-compiled",
@@ -2756,12 +2761,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neos/neos-ui-compiled.git",
-                "reference": "193964380a3cbea4b6b5986c8483da5c960a3726"
+                "reference": "4de781225329e9f4bdddd57d5ffb21bc2a46d74e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neos/neos-ui-compiled/zipball/193964380a3cbea4b6b5986c8483da5c960a3726",
-                "reference": "193964380a3cbea4b6b5986c8483da5c960a3726",
+                "url": "https://api.github.com/repos/neos/neos-ui-compiled/zipball/4de781225329e9f4bdddd57d5ffb21bc2a46d74e",
+                "reference": "4de781225329e9f4bdddd57d5ffb21bc2a46d74e",
                 "shasum": ""
             },
             "require": {
@@ -2785,7 +2790,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-04-19T07:02:50+00:00"
+            "time": "2021-04-30T06:05:23+00:00"
         },
         {
             "name": "neos/party",
@@ -4204,83 +4209,6 @@
             "time": "2021-01-07T16:49:33+00:00"
         },
         {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.22.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/5232de97ee3b75b0360528dae24e73db49566ab1",
-                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "suggest": {
-                "ext-mbstring": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.22-dev"
-                },
-                "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for the Mbstring extension",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "mbstring",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-01-22T09:19:47+00:00"
-        },
-        {
             "name": "symfony/polyfill-php73",
             "version": "v1.22.1",
             "source": {
@@ -4646,16 +4574,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.6.9",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "ba05e165bb4fd1302edf3f0280a149992e8c79be"
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/ba05e165bb4fd1302edf3f0280a149992e8c79be",
-                "reference": "ba05e165bb4fd1302edf3f0280a149992e8c79be",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
                 "shasum": ""
             },
             "require": {
@@ -4681,7 +4609,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2020-02-03T10:46:43+00:00"
+            "time": "2020-11-16T21:38:14+00:00"
         },
         {
             "name": "zendframework/zend-code",
