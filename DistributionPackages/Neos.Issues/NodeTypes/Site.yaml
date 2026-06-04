@@ -1,0 +1,11 @@
+"Neos.Issues:Site":
+  superTypes:
+    "Neos.Neos:Document": true
+    "Neos.Neos:Site": true
+  ui:
+    label: Document
+    icon: icon-globe
+  constraints:
+    nodeTypes:
+      "Neos.Neos:Document": false
+      "Neos.Issues:Mixin.Document": true

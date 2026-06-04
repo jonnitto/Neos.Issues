@@ -1,0 +1,37 @@
+name: issues
+type: php
+docroot: Web
+php_version: "8.3"
+webserver_type: nginx-fpm
+xdebug_enabled: false
+additional_hostnames: []
+additional_fqdns: []
+database:
+  type: mariadb
+  version: "11.8"
+use_dns_when_possible: true
+composer_version: "2"
+corepack_enable: false
+hooks:
+  post-composer:
+    - exec: php flow flow:package:rescan >> /dev/null
+    - exec: until php flow doctrine:compileproxies; do sleep 1; done
+upload_dirs:
+  - ../Data/Persistent
+  - ../Data/Temporary
+timezone: Europe/Vienna
+web_environment:
+  - COMPOSER_MEMORY_LIMIT=-1
+  - COMPOSER_ROOT_VERSION=dev-main
+  - FLOW_CONTEXT=Development/ddev
+  - FLOW_HTTP_TRUSTED_PROXIES=*
+  - FLOW_PATH_TEMPORARY_BASE=/tmp/neos
+  - FLOW_REWRITEURLS=1
+  - FLOW_ROOTPATH=/var/www/html
+  - MAILER_DSN=smtp://localhost:1025
+  - MAILER_FROM=mailpit@${DDEV_SITENAME}.ddev.site
+  - NEOS_DB_HOST=db
+  - NEOS_DB_NAME=db
+  - NEOS_DB_PASSWORD=db
+  - NEOS_DB_PORT=3306
+  - NEOS_DB_USER=db
